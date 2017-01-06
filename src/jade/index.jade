@@ -2,10 +2,13 @@ doctype html
 html(lang="en")
   include ./includes/head.jade
   body
-    p.text
-      |Lorem ipsudm dolor sit amet, consectetur adipisicing elit. 
-      |At vitae incidunt, sed dsaepe libero quocd, unde quas dicta veritatis 
-      |molestiae cum laudantium autem doloribus atque quis ut nobis, 
-      |nostrum iddn?
-
+    header.main-head
+      div.container_12
+        div.sub-menu-btn
+          i.fa.fa-bars.sub-menu-btn__icon(aria-hidden="true")
+        div.logo
+          img(src='img/logo.png')
+        nav.top-menu
+          li.top-menu__item: a(href="my-tests") Затестим
+          li.top-menu__item: a(href="my-tests") Обо мне
   

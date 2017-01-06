@@ -1,9 +1,27 @@
-body {
-  background-color: brown;
-  color: white; }
+.main-head {
+  background-color: #f2f1f1;
+  height: 80px; }
 
-.text {
-  width: 700px;
-  margin: 100px auto;
-  font-size: 20px;
-  line-height: 30px; }
+.logo {
+  float: left;
+  line-height: 80px;
+  margin-left: 40px; }
+
+.top-menu {
+  display: inline-block;
+  line-height: 80px;
+  margin-left: 60px; }
+  .top-menu__item {
+    display: inline-block; }
+
+.sub-menu-btn {
+  width: 80px;
+  height: 80px;
+  background-color: #86d97f;
+  float: left;
+  margin-left: -80px;
+  font-size: 28px;
+  text-align: center;
+  line-height: 80px; }
+  .sub-menu-btn__icon {
+    color: #fff; }
