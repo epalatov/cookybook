@@ -1,4 +1,9 @@
 @import 'components/variables';
+@import 'components/fonts';
+
+body {
+  background-color: white;
+}
 
 .main-head {
   background-color: $header-color;
@@ -18,13 +23,44 @@
 
   &__item {
     display: inline-block;
+    font-family: 'ProximaNova-Regular', Helvetica, sans-serif;
+    font-size: 18px;
+    margin-right: 30px;
+
+    a:link {
+      color: $logo-color;
+      text-decoration: none;
+    }
+  }
+}
+
+.main-search {
+  float:right;
+
+  line-height: 80px;
+
+  button.main-search__btn {
+    font-family: 'ProximaNova-Bold', Helvetica, sans-serif;
+    color: $logo-color;
+    border: none;
+    outline:none;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+
+    &:before {
+      font-family: 'FontAwesome';
+      content: "\f002";
+      margin-right: 17px;
+      color: $gray;
+    }
   }
 }
 
 .sub-menu-btn {
   width:80px;
   height: 80px;
-  background-color: $main-green;
+  background-color: $salat-green;
   float: left;
   margin-left:-80px;
   font-size: 28px;

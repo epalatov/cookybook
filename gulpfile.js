@@ -55,10 +55,10 @@ gulp.task('css-libs', ['scss'], function() {
 
 gulp.task('browser-sync', function() { // Создаем таск browser-sync
     browserSync({ // Выполняем browser Sync
-        // server: { // Определяем параметры сервера
-        //     baseDir: 'cookybook', // Директория для сервера - app
-        // },
-        proxy: 'localhost/cookybook',
+        server: { // Определяем параметры сервера
+            baseDir: './', // Директория для сервера - app
+        },
+        //proxy: 'localhost/cookybook',
         notify: false // Отключаем уведомления
     });
 });
@@ -92,13 +92,13 @@ gulp.task('build', ['clean','scss','vendor-scripts','custom-scripts', 'img'], fu
         'css/main.css',
         'css/libs.min.css'
         ])
-    .pipe(gulp.dest('dist/css'))
+    .pipe(gulp.dest('dist/css'));
 
     var buildFonts = gulp.src('fonts/**/*') // Переносим шрифты в продакшен
-    .pipe(gulp.dest('dist/fonts'))
+    .pipe(gulp.dest('dist/fonts'));
 
     var buildJs = gulp.src('js/**/*') // Переносим скрипты в продакшен
-    .pipe(gulp.dest('dist/js'))
+    .pipe(gulp.dest('dist/js'));
 
     var buildHtml = gulp.src('*.html') // Переносим HTML в продакшен
     .pipe(gulp.dest('dist'));
@@ -108,4 +108,4 @@ gulp.task('build', ['clean','scss','vendor-scripts','custom-scripts', 'img'], fu
 gulp.task('default', ['watch']);
 gulp.task('clear', function () {
     return cache.clearAll();
-})
+});

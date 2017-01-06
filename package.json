@@ -22,5 +22,13 @@
     "gulp-sass": "^3.0.0",
     "gulp-uglifyjs": "^0.6.2",
     "imagemin-pngquant": "^5.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eugenerzhavtsev/cookybook.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eugenerzhavtsev/cookybook/issues"
+  },
+  "homepage": "https://github.com/eugenerzhavtsev/cookybook#readme"
 }
