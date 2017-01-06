@@ -1,0 +1,13 @@
+@import 'components/variables';
+
+body {
+  background-color: $main-color;
+  color: white;
+}
+
+.text {
+  width: 700px;
+  margin: 100px auto;
+  font-size: 20px;
+  line-height: 30px;
+}
