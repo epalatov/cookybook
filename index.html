@@ -8,21 +8,31 @@
     <title>Cookybook</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/960_12_col.css">
+    <!--link(rel="stylesheet" href="css/960_12_col.css")-->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.css">
   </head>
   <body>
     <header class="main-head">
-      <div class="container_12">
-        <div class="sub-menu-btn"><i aria-hidden="true" class="fa fa-bars sub-menu-btn__icon"></i></div>
-        <div class="logo"><img src="img/logo.png"></div>
-        <nav class="top-menu">
-          <li class="top-menu__item"><a href="my-tests.html">Затестим</a></li>
-          <li class="top-menu__item"><a href="my-tests.html">Обо мне</a></li>
-        </nav>
-        <div class="main-search">
-          <button class="main-search__btn">Поиск</button>
+      <div class="container">
+        <div class="row">
+          <!-- Кнопка меню-->
+          <div class="col-md-1 col-xs-12 col-sm-2 sub-menu-btn">
+            <div class="sub-menu-btn__wrapper"><i aria-hidden="true" class="fa fa-bars sub-menu-btn__icon"></i></div>
+          </div>
+          <!-- Логотип-->
+          <div class="col-md-2 col-xs-8 col-sm-3 logo"><img src="img/logo.png"></div>
+          <!-- Меню-->
+          <nav class="col-md-6 top-menu">
+            <li class="top-menu__item"><a href="my-tests.html">Затестим</a></li>
+            <li class="top-menu__item"><a href="my-tests.html">Обо мне</a></li>
+          </nav>
+          <!-- Поиск-->
+          <div class="col-md-3 col-xs-4 col-sm-7 main-search">
+            <div class="main-search__wrapper"><i aria-hidden="true" class="fa fa-search main-search__icon"></i>
+              <button class="main-search__btn">Поиск</button>
+            </div>
+          </div>
         </div>
       </div>
     </header>
