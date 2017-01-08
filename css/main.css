@@ -95,6 +95,14 @@
       .main-search .main-search__icon {
         font-size: 24px; } }
 
+/* About Short */
+.about-short {
+  margin-top: 60px; }
+  .about-short__text {
+    font-family: 'ProximaNova-Regular', Helvetica, sans-serif;
+    font-size: 18px;
+    font-color: #2c2c2c;
+    line-height: 1.7; }
+
 body {
-  background-color: white;
   min-width: 320px; }

@@ -1,0 +1,8 @@
+/* About Short */
+
+.about-short {
+  margin-top: 60px;
+  &__text {
+    @include proxima;
+  }
+}
