@@ -1,0 +1,82 @@
+/* My Recipes */
+
+.my-recipes {
+  &__header {
+    margin-top: 30px;
+    @include proxima-b(30px, $main-black);
+  }
+}
+
+.recipe-item {
+  width: 300px;
+  //Картинка
+  &__img {
+
+  }
+  //Контентная область
+  &__content{
+    padding: 26px 32px;
+    background-color: #f9f9f9;
+    //Заголовок
+    &__header{
+      @include proxima-b(24px, $main-black);
+      height: 50px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      margin-top: 0;
+      overflow: hidden;
+    }
+    //Фрагмент текста
+    &__short-text{
+      @include proxima-r(16px, $dark-grey);
+      line-height: 1.4;
+      height: 86px;
+      overflow: hidden;
+    }
+    //Футер
+    &__footer{
+      margin-top: 18px;
+      height: 30px;
+      &__ing {
+        float: left;
+        width: 100px;
+        display: inline-block;
+        a {
+          @include link($color: $main-black)
+          font-size: 16px;
+          a:hover, a:focus {color: $main-black}
+        }
+      }
+      //Комментарии
+      &__comments{
+        text-align: right;
+        float: left;
+        width: 70px;
+        padding: 0;
+        //margin-left: 20px;
+        .comments-icon {
+            margin-right: 4px;
+            background-image: url('../img/buble-comments-icon.png');
+            background-repeat: no-repeat;
+            display: inline-block;
+            vertical-align: middle;
+            width: 20px;
+            height: 20px;
+          }
+      }
+      //Рейтинг
+      &__rate{
+        text-align: center;
+        float: right;
+        .rate-icon {
+          background-image: url('../img/heart-icon.png');
+          background-repeat: no-repeat;
+          display: inline-block;
+          vertical-align: middle;
+          width: 24px;
+          height: 17px;
+        }
+      }
+    }
+  }
+}

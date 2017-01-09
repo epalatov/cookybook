@@ -3,7 +3,7 @@
 .about-short {
   &__divider {
     margin-top: 55px;
-    @include line-dotted($medium-grey)
+    @include line-double($medium-grey)
   }
   &__text {
     @include proxima-r(18px, $main-black);

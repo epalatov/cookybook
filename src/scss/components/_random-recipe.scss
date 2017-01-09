@@ -1,7 +1,7 @@
 /* Random Recipe */
 
 .random-recipe {
-  padding-top: 30px;
+  padding-top: 20px;
   &__btn-area {
     height: 135px;
     border: 5px solid $main-grey;
@@ -14,7 +14,7 @@
   &__heading p {
     @include proxima-r(24px);
     color: $main-black;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 }
 

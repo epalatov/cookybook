@@ -1,6 +1,6 @@
 // Fonts
 
-@mixin proxima-r($size: 18px, $color: #fff) {
+@mixin proxima-r($size: 18px, $color: #888) {
   font: {
     family: 'ProximaNova-Regular', Helvetica, sans-serif;
     size: $size;
@@ -29,11 +29,18 @@
   outline:none;
 }
 
-@mixin line-dotted($color){
+@mixin line-dashed($color){
   height: 0;
   background-color: none;
   border: 0;
   border-bottom: 1px dashed $color;
+}
+
+@mixin line-double($color){
+  height: 0;
+  background-color: none;
+  border: 0;
+  border-bottom: medium double $color;
 }
 
 @mixin line-solid($color){
@@ -41,4 +48,11 @@
   background-color: none;
   border: 0;
   border-bottom: 1px solid $color;
+}
+
+@mixin link($size: 18px, $color: #0084e1) {
+  font-size: $size;
+  color: $color;
+  margin: 0;
+  padding: 0;
 }

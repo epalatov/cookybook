@@ -4,12 +4,19 @@
 @import 'components/header';
 @import 'components/about_short';
 @import 'components/random-recipe';
+@import 'components/my-recipes';
 
 // Global settings
 
 body {
   min-width: 320px;
   @include proxima-r;
+}
+
+h3 {
+  font-size: 24px;
+  padding: 0;
+  margin: 0;
 }
 
 //Customization gutters
@@ -21,4 +28,9 @@ body {
 .gutter-0 > [class^="col-"], .gutter-0 > [class^=" col-"]{
   padding-right: 0;
   padding-left: 0;
+}
+
+// Debug
+.db {
+  outline: 1px solid red;
 }

@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cookybook</title>
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
@@ -47,10 +47,10 @@
         </div>
       </div>
     </section>
-    <!--random-recipe-->
+    <!--Random-recipe-->
     <section class="random-recipe">
       <div class="container">
-        <div class="row">
+        <div class="row gutter-0">
           <div class="col-md-12 col-md-offset-1 random-recipe__heading">
             <p>Мучаетесь вопросом ”Что бы приготовить?” Попробуйте случайный рецепт:</p>
           </div>
@@ -62,6 +62,46 @@
               <button class="random-recipe__btn">Случайный рецепт</button>
             </div>
             <div class="col-lg-4 text-center"><img src="img/food-right.jpg" alt="food" class="food-pic"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--My-recipes-->
+    <section class="my-recipes">
+      <div class="container"> 
+        <div class="row gutter-0">
+          <div class="col-lg-12 col-md-offset-1">
+            <h1 class="my-recipes__header">Моя кулинарная книга</h1>
+          </div>
+        </div>
+        <div class="row gutter-0">
+          <div class="col-lg-12 col-md-offset-1">
+            <div class="row gutter-0">
+              <div class="col-lg-4">
+                <div class="recipe-item">
+                  <div class="recipe-item__img"><img src="img/recipe-pic.jpg" alt="Cacke"></div>
+                  <div class="recipe-item__content">
+                    <div class="recipe-item__content__header">
+                      <h3>Овощные оладьи из овощей с зеленью</h3>
+                    </div>
+                    <div class="recipe-item__content__short-text">
+                      <p>Ранним летом, когда на рынке овощей царит изобилие, хочется побаловать себя и близких облегченным в диетическом... плане кушаньем. К таковым можно отнести оладьи, приготовленные из кабачков, моркови или картофеля, а ещё и из молодой свекольной ботвы.</p>
+                    </div>
+                    <div class="recipe-item__content__footer">
+                      <div class="recipe-item__content__footer__ing"><a href="#">Ингридиенты</a></div>
+                      <div class="recipe-item__content__footer__comments">
+                        <div class="comments-icon"></div><span id="item-num-comments">222</span>
+                      </div>
+                      <div class="recipe-item__content__footer__rate clearfix">
+                        <div class="rate-icon"></div><span id="item-num-like">555</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4"></div>
+              <div class="col-lg-4"></div>
+            </div>
           </div>
         </div>
       </div>
