@@ -1,0 +1,23 @@
+/* Random Recipe */
+
+.random-recipe {
+  padding-top: 30px;
+  &__btn-area {
+    height: 135px;
+    border: 5px solid $main-grey;
+  }
+  button {
+    @include proxima-b(20px);
+    @include btn($dark-green)
+    margin-top:28px;
+  }
+  &__heading p {
+    @include proxima-r(24px);
+    color: $main-black;
+    margin-bottom: 50px;
+  }
+}
+
+.food-pic {
+  margin-top: 10px;
+}

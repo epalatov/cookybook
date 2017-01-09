@@ -2,6 +2,7 @@ doctype html
 html(lang="en")
   include ./includes/head.jade
   body
+    // Шапка
     header.main-head
       div.container
         div.row
@@ -21,22 +22,34 @@ html(lang="en")
           div.main-search__wrapper
             i.fa.fa-search.main-search__icon(aria-hidden="true")
             button.main-search__btn Поиск
+    // About-short
     section.about-short
       div.container
-        div.row
-          div.col-md-2.col-md-offset-1.about-short__avatar
+        .row.gutter-0
+          .col-md-2.col-lg-1.col-md-offset-1.about-short__avatar
             img(src="img/ava.png", alt="It's me")
-          div.col-md-9.about-short__text
-            p 
-            |Привет!<br><br>Ранним летом, когда на рынке овощей 
-            |царит изобилие, хочется побаловать себя и близких 
-            |облегченным в диетическом... плане кушаньем. 
-            |К таковым можно отнести оладьи, приготовленные из 
-            |кабачков, моркови или картофеля, а ещё и из молодой 
-            |свекольной ботвы...#[a(href="#") Читать далее]
+          .col-md-8.col-lg-7.col-md-offset-1.about-short__text
+            p Привет!<br>Ранним летом, когда на рынке овощей царит изобилие, хочется побаловать себя и близких облегченным в диетическом... плане кушаньем. К таковым можно отнести оладьи, приготовленные из кабачков, моркови или картофеля, а ещё и из молодой свекольной ботвы... #[a(href="#") Читать далее]
+          hr.col-md-12.col-md-offset-1.col-lg-11.about-short__divider
+    //random-recipe
+    section.random-recipe
+      div.container
+        .row
+          .col-md-12.col-md-offset-1.random-recipe__heading
+            p Мучаетесь вопросом ”Что бы приготовить?” Попробуйте случайный рецепт:
+        .row.gutter-0
+          .col-md-12.col-md-offset-1.col-lg-11.gutter-0.random-recipe__btn-area
+            .col-lg-4.text-center
+              img(class="food-pic" src="img/food-left.jpg", alt="food")
+            .col-lg-4.text-center
+              button.random-recipe__btn Случайный рецепт
+            .col-lg-4.text-center
+              img(class="food-pic" src="img/food-right.jpg", alt="food")
           
-    
           
+        
+  
+        
      script(src="src/libs/jquery/dist/jquery.min.js")
      script(src="src/libs/bootstrap/dist/js/bootstrap.min.js")    
   

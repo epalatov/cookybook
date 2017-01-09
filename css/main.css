@@ -1,20 +1,19 @@
 /* Fonts */
 @font-face {
   font-family: 'ProximaNova-Regular';
-  src: url("./fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("./fonts/ProximaNova-Regular.otf") format("opentype"), url("./fonts/ProximaNova-Regular.woff") format("woff"), url("./fonts/ProximaNova-Regular.ttf") format("truetype"), url("./fonts/ProximaNova-Regular.svg#ProximaNova-Regular") format("svg");
+  src: url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular.otf") format("opentype"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype"), url("../fonts/ProximaNova-Regular.svg#ProximaNova-Regular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'ProximaNova-Bold';
-  src: url("./fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("./fonts/ProximaNova-Bold.otf") format("opentype"), url("./fonts/ProximaNova-Bold.woff") format("woff"), url("./fonts/ProximaNova-Bold.ttf") format("truetype"), url("./fonts/ProximaNova-Bold.svg#ProximaNova-Bold") format("svg");
-  font-weight: normal;
-  font-style: normal; }
+  src: url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold.otf") format("opentype"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype"), url("../fonts/ProximaNova-Bold.svg#ProximaNova-Bold") format("svg"); }
 
 /* Header */
 .main-head {
   height: 80px;
   width: 100%;
+  margin-bottom: 55px;
   background-color: #f2f1f1; }
   @media (max-width: 767px) {
     .main-head {
@@ -66,7 +65,7 @@
     .top-menu__item:first-child {
       margin-left: 50px; }
     .top-menu__item a:link {
-      color: #2c2c2c;
+      color: #2d2d2d;
       text-decoration: none; }
 
 .main-search {
@@ -79,11 +78,10 @@
         width: 45px; } }
   .main-search button.main-search__btn {
     font-family: 'ProximaNova-Bold', Helvetica, sans-serif;
-    color: #2c2c2c;
+    color: #2d2d2d;
     border: none;
     outline: none;
     background: none;
-    cursor: pointer;
     font-size: 18px; }
     @media (max-width: 370px) {
       .main-search button.main-search__btn {
@@ -96,13 +94,56 @@
         font-size: 24px; } }
 
 /* About Short */
-.about-short {
-  margin-top: 60px; }
-  .about-short__text {
+.about-short__divider {
+  margin-top: 55px;
+  height: 0;
+  background-color: none;
+  border: 0;
+  border-bottom: 1px dashed #e0dada; }
+
+.about-short__text {
+  font-family: 'ProximaNova-Regular', Helvetica, sans-serif;
+  font-size: 18px;
+  color: #2d2d2d;
+  line-height: 1.7; }
+
+/* Random Recipe */
+.random-recipe {
+  padding-top: 30px; }
+  .random-recipe__btn-area {
+    height: 135px;
+    border: 5px solid #f2f1f1; }
+  .random-recipe button {
+    font-family: 'ProximaNova-Bold', Helvetica, sans-serif;
+    font-size: 20px;
+    color: #fff;
+    line-height: 1.7;
+    padding: 14px 60px;
+    -webkit-border-radius: 4px;
+            border-radius: 4px;
+    background: none;
+    background-color: #66b260;
+    border: none;
+    outline: none;
+    margin-top: 28px; }
+  .random-recipe__heading p {
     font-family: 'ProximaNova-Regular', Helvetica, sans-serif;
-    font-size: 18px;
-    font-color: #2c2c2c;
-    line-height: 1.7; }
+    font-size: 24px;
+    color: #fff;
+    line-height: 1.7;
+    color: #2d2d2d;
+    margin-bottom: 50px; }
+
+.food-pic {
+  margin-top: 10px; }
 
 body {
-  min-width: 320px; }
+  min-width: 320px;
+  font-family: 'ProximaNova-Regular', Helvetica, sans-serif;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.7; }
+
+.gutter-0 > [class^="col-"], .gutter-0 > [class^=" col-"] {
+  padding-right: 0;
+  padding-left: 0; }

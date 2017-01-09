@@ -1,10 +1,44 @@
 // Fonts
 
-@mixin proxima($size: 18px) {
+@mixin proxima-r($size: 18px, $color: #fff) {
   font: {
     family: 'ProximaNova-Regular', Helvetica, sans-serif;
     size: $size;
-    color: $main-black;
   }
+  color: $color;
   line-height: 1.7;
+}
+
+@mixin proxima-b($size: 18px, $color: #fff) {
+  font: {
+    family: 'ProximaNova-Bold', Helvetica, sans-serif;
+    size: $size;
+  }
+  color: $color;
+  line-height: 1.7;
+}
+
+// UI
+
+@mixin btn($color) {
+  padding: 14px 60px;
+  border-radius: 4px;
+  background: none;
+  background-color: $color;
+  border: none;
+  outline:none;
+}
+
+@mixin line-dotted($color){
+  height: 0;
+  background-color: none;
+  border: 0;
+  border-bottom: 1px dashed $color;
+}
+
+@mixin line-solid($color){
+  height: 0;
+  background-color: none;
+  border: 0;
+  border-bottom: 1px solid $color;
 }

@@ -3,7 +3,22 @@
 @import 'components/fonts';
 @import 'components/header';
 @import 'components/about_short';
+@import 'components/random-recipe';
+
+// Global settings
 
 body {
   min-width: 320px;
+  @include proxima-r;
+}
+
+//Customization gutters
+
+// .gutter-0.row {
+//   margin-right: 0;
+//   margin-left: 0;
+//   }
+.gutter-0 > [class^="col-"], .gutter-0 > [class^=" col-"]{
+  padding-right: 0;
+  padding-left: 0;
 }
