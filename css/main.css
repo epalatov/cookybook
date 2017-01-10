@@ -147,6 +147,10 @@
     font-size: 30px;
     color: #2d2d2d;
     line-height: 1.7; }
+  .my-recipes .pagination {
+    margin-bottom: 50px; }
+    .my-recipes .pagination a, .my-recipes .pagination a:link {
+      font-size: 16px; }
 
 .recipe-item {
   width: 100%;
@@ -191,8 +195,6 @@
         .recipe-item__content__footer__ing a {
           font-size: 18px;
           color: #2d2d2d;
-          margin: 0;
-          padding: 0;
           font-size: 16px; }
           .recipe-item__content__footer__ing a a:hover, .recipe-item__content__footer__ing a a:focus {
             color: #2d2d2d; }

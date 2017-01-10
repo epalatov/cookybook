@@ -6,6 +6,12 @@
     margin-bottom: 35px;
     @include proxima-b(30px, $main-black);
   }
+  .pagination {
+    margin-bottom: 50px;
+    a, a:link {
+      font-size: 16px;
+    }
+  }
 }
 
 .recipe-item {

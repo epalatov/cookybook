@@ -1,31 +1,33 @@
 
+//-Number of columns 
 - var n = 4;
 
 doctype html
 html(lang="en")
   include ./includes/head.jade
   body
-    // Шапка
+    //-Header
     header.main-head
       div.container
         div.row.gutter-0
-          // Кнопка меню
+          //-Menu button
           div.col-md-1.col-xs-12.col-sm-2.sub-menu-btn
             div.sub-menu-btn__wrapper
               i.fa.fa-bars.sub-menu-btn__icon(aria-hidden="true")
-          // Логотип
+          //-Logo
           div.col-md-2.col-xs-8.col-sm-3.logo
             img(src='img/logo.png')
-          // Меню
+          //-Menu
           nav.col-md-6.top-menu
             li.top-menu__item: a(href="my-tests.html") Затестим
             li.top-menu__item: a(href="my-tests.html") Обо мне
-          // Поиск
+          //-Search
           div.col-md-3.col-xs-4.col-sm-7.main-search
             div.main-search__wrapper
               i.fa.fa-search.main-search__icon(aria-hidden="true")
               button.main-search__btn Поиск
-    // About-short
+              
+    //-About-short
     section.about-short
       div.container
         .row.gutter-0
@@ -34,7 +36,8 @@ html(lang="en")
           .col-md-10.col-lg-10.about-short__text
             p Привет!<br>Ранним летом, когда на рынке овощей царит изобилие, хочется побаловать себя и близких облегченным в диетическом... плане кушаньем. К таковым можно отнести оладьи, приготовленные из кабачков, моркови или картофеля, а ещё и из молодой свекольной ботвы... #[a(href="#") Читать далее]
           hr.col-md-12.col-lg-12.about-short__divider
-    //Random-recipe
+          
+    //-Random-recipe
     section.random-recipe
       div.container
         .row.gutter-0
@@ -47,16 +50,16 @@ html(lang="en")
             .col-lg-4.text-center
               button.random-recipe__btn Случайный рецепт
             .col-lg-4.text-center
-              img(class="food-pic" src="img/food-right.jpg", alt="food")      
-    
-    //My-recipes
+              img(class="food-pic" src="img/food-right.jpg", alt="food")          
+              
+    //-My-recipes
     section.my-recipes
       div.container  
-        // Заголовок секции
+        //-Head of section
         .row
           .col-lg-12
             h1.my-recipes__header Мои рецепты
-        // Рецепты
+        //-Recipes
         .row
           div(class="col-lg-#{n}")
             include ./includes/recipe-preview.jade    
@@ -75,7 +78,13 @@ html(lang="en")
           div(class="col-lg-#{n}")
             include ./includes/recipe-preview.jade
           div(class="col-lg-#{n}")
-            include ./includes/recipe-preview.jade   
+            include ./includes/recipe-preview.jade  
+        //-Pagination
+        .row
+          .col-lg-12.text-center
+            include ./includes/pagination.jade
+      
+           
         
     
         
@@ -84,6 +93,8 @@ html(lang="en")
     
      script(src="src/libs/jquery/dist/jquery.min.js")
      script(src="src/libs/bootstrap/dist/js/bootstrap.min.js")    
+     
+  
 
     
   
