@@ -1,19 +1,31 @@
 /* My Recipes */
 
 .my-recipes {
+  padding-top: 35px;
   &__header {
-    margin-top: 30px;
+    margin-bottom: 35px;
     @include proxima-b(30px, $main-black);
   }
 }
 
 .recipe-item {
-  width: 300px;
+  width: 100%;
+  margin-bottom: 30px;
+
+  // @media (min-width: 1200px) {
+  //   width: 360px;
+  // }
+  &__footer-number {
+    margin-top: 2px;
+  }
   //Картинка
   &__img {
-
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
-  //Контентная область
+  //Содержание
   &__content{
     padding: 26px 32px;
     background-color: #f9f9f9;
@@ -33,10 +45,12 @@
       height: 86px;
       overflow: hidden;
     }
-    //Футер
+    //Повал
     &__footer{
       margin-top: 18px;
       height: 30px;
+      //Ссылка ингридиенты
+      @include proxima-r(16px, $main-black);
       &__ing {
         float: left;
         width: 100px;
@@ -47,15 +61,15 @@
           a:hover, a:focus {color: $main-black}
         }
       }
-      //Комментарии
+      //Иконка комментариев
       &__comments{
+        float: right;
         text-align: right;
-        float: left;
-        width: 70px;
+        width: 60px;
         padding: 0;
-        //margin-left: 20px;
         .comments-icon {
             margin-right: 4px;
+            margin-bottom: 2px;
             background-image: url('../img/buble-comments-icon.png');
             background-repeat: no-repeat;
             display: inline-block;
@@ -64,15 +78,16 @@
             height: 20px;
           }
       }
-      //Рейтинг
+      //Иконка рейтига
       &__rate{
-        text-align: center;
+        text-align: right;
         float: right;
         .rate-icon {
           background-image: url('../img/heart-icon.png');
           background-repeat: no-repeat;
           display: inline-block;
           vertical-align: middle;
+          margin-bottom: 3px;
           width: 24px;
           height: 17px;
         }

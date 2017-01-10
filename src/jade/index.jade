@@ -1,3 +1,6 @@
+
+- var n = 4;
+
 doctype html
 html(lang="en")
   include ./includes/head.jade
@@ -5,78 +8,75 @@ html(lang="en")
     // Шапка
     header.main-head
       div.container
-        div.row
-        // Кнопка меню
-        div.col-md-1.col-xs-12.col-sm-2.sub-menu-btn
-          div.sub-menu-btn__wrapper
-            i.fa.fa-bars.sub-menu-btn__icon(aria-hidden="true")
-        // Логотип
-        div.col-md-2.col-xs-8.col-sm-3.logo
-          img(src='img/logo.png')
-        // Меню
-        nav.col-md-6.top-menu
-          li.top-menu__item: a(href="my-tests.html") Затестим
-          li.top-menu__item: a(href="my-tests.html") Обо мне
-        // Поиск
-        div.col-md-3.col-xs-4.col-sm-7.main-search
-          div.main-search__wrapper
-            i.fa.fa-search.main-search__icon(aria-hidden="true")
-            button.main-search__btn Поиск
+        div.row.gutter-0
+          // Кнопка меню
+          div.col-md-1.col-xs-12.col-sm-2.sub-menu-btn
+            div.sub-menu-btn__wrapper
+              i.fa.fa-bars.sub-menu-btn__icon(aria-hidden="true")
+          // Логотип
+          div.col-md-2.col-xs-8.col-sm-3.logo
+            img(src='img/logo.png')
+          // Меню
+          nav.col-md-6.top-menu
+            li.top-menu__item: a(href="my-tests.html") Затестим
+            li.top-menu__item: a(href="my-tests.html") Обо мне
+          // Поиск
+          div.col-md-3.col-xs-4.col-sm-7.main-search
+            div.main-search__wrapper
+              i.fa.fa-search.main-search__icon(aria-hidden="true")
+              button.main-search__btn Поиск
     // About-short
     section.about-short
       div.container
         .row.gutter-0
-          .col-md-2.col-lg-1.col-md-offset-1.about-short__avatar
+          .col-md-2.col-lg-2.about-short__avatar
             img(src="img/ava.png", alt="It's me")
-          .col-md-8.col-lg-7.col-md-offset-1.about-short__text
+          .col-md-10.col-lg-10.about-short__text
             p Привет!<br>Ранним летом, когда на рынке овощей царит изобилие, хочется побаловать себя и близких облегченным в диетическом... плане кушаньем. К таковым можно отнести оладьи, приготовленные из кабачков, моркови или картофеля, а ещё и из молодой свекольной ботвы... #[a(href="#") Читать далее]
-          hr.col-md-12.col-md-offset-1.col-lg-11.about-short__divider
+          hr.col-md-12.col-lg-12.about-short__divider
     //Random-recipe
     section.random-recipe
       div.container
         .row.gutter-0
-          .col-md-12.col-md-offset-1.random-recipe__heading
+          .col-md-12.random-recipe__heading
             p Мучаетесь вопросом ”Что бы приготовить?” Попробуйте случайный рецепт:
         .row.gutter-0
-          .col-md-12.col-md-offset-1.col-lg-11.gutter-0.random-recipe__btn-area
+          .col-md-12.col-lg-12.gutter-0.random-recipe__btn-area
             .col-lg-4.text-center
               img(class="food-pic" src="img/food-left.jpg", alt="food")
             .col-lg-4.text-center
               button.random-recipe__btn Случайный рецепт
             .col-lg-4.text-center
               img(class="food-pic" src="img/food-right.jpg", alt="food")      
+    
     //My-recipes
     section.my-recipes
       div.container  
-        .row.gutter-0
-          .col-lg-12.col-md-offset-1
-            h1.my-recipes__header Моя кулинарная книга
-        .row.gutter-0
-          .col-lg-12.col-md-offset-1
-            .row.gutter-0
-              .col-lg-4
-                .recipe-item
-                  .recipe-item__img
-                    img(src="img/recipe-pic.jpg", alt="Cacke")
-                  .recipe-item__content
-                    .recipe-item__content__header
-                      h3 Овощные оладьи из овощей с зеленью
-                    .recipe-item__content__short-text
-                      p Ранним летом, когда на рынке овощей царит изобилие, хочется побаловать себя и близких облегченным в диетическом... плане кушаньем. К таковым можно отнести оладьи, приготовленные из кабачков, моркови или картофеля, а ещё и из молодой свекольной ботвы.
-                    .recipe-item__content__footer
-                      .recipe-item__content__footer__ing
-                        a(href="#") Ингридиенты
-                      .recipe-item__content__footer__comments
-                        .comments-icon
-                        span#item-num-comments 222
-                      .recipe-item__content__footer__rate.clearfix
-                        .rate-icon
-                        span#item-num-like 555
-              .col-lg-4
-              .col-lg-4
-      
-              
-          
+        // Заголовок секции
+        .row
+          .col-lg-12
+            h1.my-recipes__header Мои рецепты
+        // Рецепты
+        .row
+          div(class="col-lg-#{n}")
+            include ./includes/recipe-preview.jade    
+          div(class="col-lg-#{n}")
+            include ./includes/recipe-preview.jade  
+          div(class="col-lg-#{n}")
+            include ./includes/recipe-preview.jade  
+          div(class="col-lg-#{n}")
+            include ./includes/recipe-preview.jade 
+          div(class="col-lg-#{n}")
+            include ./includes/recipe-preview.jade
+          div(class="col-lg-#{n}")
+            include ./includes/recipe-preview.jade   
+          div(class="col-lg-#{n}")
+            include ./includes/recipe-preview.jade 
+          div(class="col-lg-#{n}")
+            include ./includes/recipe-preview.jade
+          div(class="col-lg-#{n}")
+            include ./includes/recipe-preview.jade   
+        
     
         
     

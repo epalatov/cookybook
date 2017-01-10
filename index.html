@@ -15,22 +15,23 @@
     <!-- Шапка-->
     <header class="main-head">
       <div class="container">
-        <div class="row"></div>
-        <!-- Кнопка меню-->
-        <div class="col-md-1 col-xs-12 col-sm-2 sub-menu-btn">
-          <div class="sub-menu-btn__wrapper"><i aria-hidden="true" class="fa fa-bars sub-menu-btn__icon"></i></div>
-        </div>
-        <!-- Логотип-->
-        <div class="col-md-2 col-xs-8 col-sm-3 logo"><img src="img/logo.png"></div>
-        <!-- Меню-->
-        <nav class="col-md-6 top-menu">
-          <li class="top-menu__item"><a href="my-tests.html">Затестим</a></li>
-          <li class="top-menu__item"><a href="my-tests.html">Обо мне</a></li>
-        </nav>
-        <!-- Поиск-->
-        <div class="col-md-3 col-xs-4 col-sm-7 main-search">
-          <div class="main-search__wrapper"><i aria-hidden="true" class="fa fa-search main-search__icon"></i>
-            <button class="main-search__btn">Поиск</button>
+        <div class="row gutter-0">
+          <!-- Кнопка меню-->
+          <div class="col-md-1 col-xs-12 col-sm-2 sub-menu-btn">
+            <div class="sub-menu-btn__wrapper"><i aria-hidden="true" class="fa fa-bars sub-menu-btn__icon"></i></div>
+          </div>
+          <!-- Логотип-->
+          <div class="col-md-2 col-xs-8 col-sm-3 logo"><img src="img/logo.png"></div>
+          <!-- Меню-->
+          <nav class="col-md-6 top-menu">
+            <li class="top-menu__item"><a href="my-tests.html">Затестим</a></li>
+            <li class="top-menu__item"><a href="my-tests.html">Обо мне</a></li>
+          </nav>
+          <!-- Поиск-->
+          <div class="col-md-3 col-xs-4 col-sm-7 main-search">
+            <div class="main-search__wrapper"><i aria-hidden="true" class="fa fa-search main-search__icon"></i>
+              <button class="main-search__btn">Поиск</button>
+            </div>
           </div>
         </div>
       </div>
@@ -39,11 +40,11 @@
     <section class="about-short">
       <div class="container">
         <div class="row gutter-0">
-          <div class="col-md-2 col-lg-1 col-md-offset-1 about-short__avatar"><img src="img/ava.png" alt="It's me"></div>
-          <div class="col-md-8 col-lg-7 col-md-offset-1 about-short__text">
+          <div class="col-md-2 col-lg-2 about-short__avatar"><img src="img/ava.png" alt="It's me"></div>
+          <div class="col-md-10 col-lg-10 about-short__text">
             <p>Привет!<br>Ранним летом, когда на рынке овощей царит изобилие, хочется побаловать себя и близких облегченным в диетическом... плане кушаньем. К таковым можно отнести оладьи, приготовленные из кабачков, моркови или картофеля, а ещё и из молодой свекольной ботвы... <a href="#">Читать далее</a></p>
           </div>
-          <hr class="col-md-12 col-md-offset-1 col-lg-11 about-short__divider">
+          <hr class="col-md-12 col-lg-12 about-short__divider">
         </div>
       </div>
     </section>
@@ -51,12 +52,12 @@
     <section class="random-recipe">
       <div class="container">
         <div class="row gutter-0">
-          <div class="col-md-12 col-md-offset-1 random-recipe__heading">
+          <div class="col-md-12 random-recipe__heading">
             <p>Мучаетесь вопросом ”Что бы приготовить?” Попробуйте случайный рецепт:</p>
           </div>
         </div>
         <div class="row gutter-0">
-          <div class="col-md-12 col-md-offset-1 col-lg-11 gutter-0 random-recipe__btn-area">
+          <div class="col-md-12 col-lg-12 gutter-0 random-recipe__btn-area">
             <div class="col-lg-4 text-center"><img src="img/food-left.jpg" alt="food" class="food-pic"></div>
             <div class="col-lg-4 text-center">
               <button class="random-recipe__btn">Случайный рецепт</button>
@@ -69,38 +70,282 @@
     <!--My-recipes-->
     <section class="my-recipes">
       <div class="container"> 
-        <div class="row gutter-0">
-          <div class="col-lg-12 col-md-offset-1">
-            <h1 class="my-recipes__header">Моя кулинарная книга</h1>
+        <!-- Заголовок секции-->
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="my-recipes__header">Мои рецепты</h1>
           </div>
         </div>
-        <div class="row gutter-0">
-          <div class="col-lg-12 col-md-offset-1">
-            <div class="row gutter-0">
-              <div class="col-lg-4">
-                <div class="recipe-item">
-                  <div class="recipe-item__img"><img src="img/recipe-pic.jpg" alt="Cacke"></div>
-                  <div class="recipe-item__content">
-                    <div class="recipe-item__content__header">
-                      <h3>Овощные оладьи из овощей с зеленью</h3>
-                    </div>
-                    <div class="recipe-item__content__short-text">
-                      <p>Ранним летом, когда на рынке овощей царит изобилие, хочется побаловать себя и близких облегченным в диетическом... плане кушаньем. К таковым можно отнести оладьи, приготовленные из кабачков, моркови или картофеля, а ещё и из молодой свекольной ботвы.</p>
-                    </div>
-                    <div class="recipe-item__content__footer">
-                      <div class="recipe-item__content__footer__ing"><a href="#">Ингридиенты</a></div>
-                      <div class="recipe-item__content__footer__comments">
-                        <div class="comments-icon"></div><span id="item-num-comments">222</span>
-                      </div>
-                      <div class="recipe-item__content__footer__rate clearfix">
-                        <div class="rate-icon"></div><span id="item-num-like">555</span>
-                      </div>
-                    </div>
+        <!-- Рецепты-->
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="recipe-item">
+              <!--Картинка-->
+              <div class="recipe-item__img"><img src="img/recipe-pic.jpg" alt="Cacke"></div>
+              <!--Содержание-->
+              <div class="recipe-item__content">
+                <!--Заголовок-->
+                <div class="recipe-item__content__header">
+                  <h3>Овощные оладьи из овощей с зеленью</h3>
+                </div>
+                <!--Фрагмент текста-->
+                <div class="recipe-item__content__short-text">
+                  <p>Ранним летом, когда на рынке овощей царит изобилие, хочется побаловать себя и близких облегченным в диетическом... плане кушаньем. К таковым можно отнести оладьи, приготовленные из кабачков, моркови или картофеля, а ещё и из молодой свекольной ботвы.</p>
+                </div>
+                <!--Подвал-->
+                <div class="recipe-item__content__footer clearfix">
+                  <!--Ссылка Ингридиенты-->
+                  <div class="recipe-item__content__footer__ing"><a href="#">Ингридиенты</a></div>
+                  <!--Иконка комментариев-->
+                  <div class="recipe-item__content__footer__comments">
+                    <div class="comments-icon"></div><span id="recipe-item-num-comments" class="recipe-item__footer-number">34</span>
+                  </div>
+                  <!--Иконка рейтинга-->
+                  <div class="recipe-item__content__footer__rate">
+                    <div class="rate-icon"></div><span id="recipe-item-num-like" class="recipe-item__footer-number">235</span>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4"></div>
-              <div class="col-lg-4"></div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="recipe-item">
+              <!--Картинка-->
+              <div class="recipe-item__img"><img src="img/recipe-pic.jpg" alt="Cacke"></div>
+              <!--Содержание-->
+              <div class="recipe-item__content">
+                <!--Заголовок-->
+                <div class="recipe-item__content__header">
+                  <h3>Овощные оладьи из овощей с зеленью</h3>
+                </div>
+                <!--Фрагмент текста-->
+                <div class="recipe-item__content__short-text">
+                  <p>Ранним летом, когда на рынке овощей царит изобилие, хочется побаловать себя и близких облегченным в диетическом... плане кушаньем. К таковым можно отнести оладьи, приготовленные из кабачков, моркови или картофеля, а ещё и из молодой свекольной ботвы.</p>
+                </div>
+                <!--Подвал-->
+                <div class="recipe-item__content__footer clearfix">
+                  <!--Ссылка Ингридиенты-->
+                  <div class="recipe-item__content__footer__ing"><a href="#">Ингридиенты</a></div>
+                  <!--Иконка комментариев-->
+                  <div class="recipe-item__content__footer__comments">
+                    <div class="comments-icon"></div><span id="recipe-item-num-comments" class="recipe-item__footer-number">34</span>
+                  </div>
+                  <!--Иконка рейтинга-->
+                  <div class="recipe-item__content__footer__rate">
+                    <div class="rate-icon"></div><span id="recipe-item-num-like" class="recipe-item__footer-number">235</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="recipe-item">
+              <!--Картинка-->
+              <div class="recipe-item__img"><img src="img/recipe-pic.jpg" alt="Cacke"></div>
+              <!--Содержание-->
+              <div class="recipe-item__content">
+                <!--Заголовок-->
+                <div class="recipe-item__content__header">
+                  <h3>Овощные оладьи из овощей с зеленью</h3>
+                </div>
+                <!--Фрагмент текста-->
+                <div class="recipe-item__content__short-text">
+                  <p>Ранним летом, когда на рынке овощей царит изобилие, хочется побаловать себя и близких облегченным в диетическом... плане кушаньем. К таковым можно отнести оладьи, приготовленные из кабачков, моркови или картофеля, а ещё и из молодой свекольной ботвы.</p>
+                </div>
+                <!--Подвал-->
+                <div class="recipe-item__content__footer clearfix">
+                  <!--Ссылка Ингридиенты-->
+                  <div class="recipe-item__content__footer__ing"><a href="#">Ингридиенты</a></div>
+                  <!--Иконка комментариев-->
+                  <div class="recipe-item__content__footer__comments">
+                    <div class="comments-icon"></div><span id="recipe-item-num-comments" class="recipe-item__footer-number">34</span>
+                  </div>
+                  <!--Иконка рейтинга-->
+                  <div class="recipe-item__content__footer__rate">
+                    <div class="rate-icon"></div><span id="recipe-item-num-like" class="recipe-item__footer-number">235</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="recipe-item">
+              <!--Картинка-->
+              <div class="recipe-item__img"><img src="img/recipe-pic.jpg" alt="Cacke"></div>
+              <!--Содержание-->
+              <div class="recipe-item__content">
+                <!--Заголовок-->
+                <div class="recipe-item__content__header">
+                  <h3>Овощные оладьи из овощей с зеленью</h3>
+                </div>
+                <!--Фрагмент текста-->
+                <div class="recipe-item__content__short-text">
+                  <p>Ранним летом, когда на рынке овощей царит изобилие, хочется побаловать себя и близких облегченным в диетическом... плане кушаньем. К таковым можно отнести оладьи, приготовленные из кабачков, моркови или картофеля, а ещё и из молодой свекольной ботвы.</p>
+                </div>
+                <!--Подвал-->
+                <div class="recipe-item__content__footer clearfix">
+                  <!--Ссылка Ингридиенты-->
+                  <div class="recipe-item__content__footer__ing"><a href="#">Ингридиенты</a></div>
+                  <!--Иконка комментариев-->
+                  <div class="recipe-item__content__footer__comments">
+                    <div class="comments-icon"></div><span id="recipe-item-num-comments" class="recipe-item__footer-number">34</span>
+                  </div>
+                  <!--Иконка рейтинга-->
+                  <div class="recipe-item__content__footer__rate">
+                    <div class="rate-icon"></div><span id="recipe-item-num-like" class="recipe-item__footer-number">235</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="recipe-item">
+              <!--Картинка-->
+              <div class="recipe-item__img"><img src="img/recipe-pic.jpg" alt="Cacke"></div>
+              <!--Содержание-->
+              <div class="recipe-item__content">
+                <!--Заголовок-->
+                <div class="recipe-item__content__header">
+                  <h3>Овощные оладьи из овощей с зеленью</h3>
+                </div>
+                <!--Фрагмент текста-->
+                <div class="recipe-item__content__short-text">
+                  <p>Ранним летом, когда на рынке овощей царит изобилие, хочется побаловать себя и близких облегченным в диетическом... плане кушаньем. К таковым можно отнести оладьи, приготовленные из кабачков, моркови или картофеля, а ещё и из молодой свекольной ботвы.</p>
+                </div>
+                <!--Подвал-->
+                <div class="recipe-item__content__footer clearfix">
+                  <!--Ссылка Ингридиенты-->
+                  <div class="recipe-item__content__footer__ing"><a href="#">Ингридиенты</a></div>
+                  <!--Иконка комментариев-->
+                  <div class="recipe-item__content__footer__comments">
+                    <div class="comments-icon"></div><span id="recipe-item-num-comments" class="recipe-item__footer-number">34</span>
+                  </div>
+                  <!--Иконка рейтинга-->
+                  <div class="recipe-item__content__footer__rate">
+                    <div class="rate-icon"></div><span id="recipe-item-num-like" class="recipe-item__footer-number">235</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="recipe-item">
+              <!--Картинка-->
+              <div class="recipe-item__img"><img src="img/recipe-pic.jpg" alt="Cacke"></div>
+              <!--Содержание-->
+              <div class="recipe-item__content">
+                <!--Заголовок-->
+                <div class="recipe-item__content__header">
+                  <h3>Овощные оладьи из овощей с зеленью</h3>
+                </div>
+                <!--Фрагмент текста-->
+                <div class="recipe-item__content__short-text">
+                  <p>Ранним летом, когда на рынке овощей царит изобилие, хочется побаловать себя и близких облегченным в диетическом... плане кушаньем. К таковым можно отнести оладьи, приготовленные из кабачков, моркови или картофеля, а ещё и из молодой свекольной ботвы.</p>
+                </div>
+                <!--Подвал-->
+                <div class="recipe-item__content__footer clearfix">
+                  <!--Ссылка Ингридиенты-->
+                  <div class="recipe-item__content__footer__ing"><a href="#">Ингридиенты</a></div>
+                  <!--Иконка комментариев-->
+                  <div class="recipe-item__content__footer__comments">
+                    <div class="comments-icon"></div><span id="recipe-item-num-comments" class="recipe-item__footer-number">34</span>
+                  </div>
+                  <!--Иконка рейтинга-->
+                  <div class="recipe-item__content__footer__rate">
+                    <div class="rate-icon"></div><span id="recipe-item-num-like" class="recipe-item__footer-number">235</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="recipe-item">
+              <!--Картинка-->
+              <div class="recipe-item__img"><img src="img/recipe-pic.jpg" alt="Cacke"></div>
+              <!--Содержание-->
+              <div class="recipe-item__content">
+                <!--Заголовок-->
+                <div class="recipe-item__content__header">
+                  <h3>Овощные оладьи из овощей с зеленью</h3>
+                </div>
+                <!--Фрагмент текста-->
+                <div class="recipe-item__content__short-text">
+                  <p>Ранним летом, когда на рынке овощей царит изобилие, хочется побаловать себя и близких облегченным в диетическом... плане кушаньем. К таковым можно отнести оладьи, приготовленные из кабачков, моркови или картофеля, а ещё и из молодой свекольной ботвы.</p>
+                </div>
+                <!--Подвал-->
+                <div class="recipe-item__content__footer clearfix">
+                  <!--Ссылка Ингридиенты-->
+                  <div class="recipe-item__content__footer__ing"><a href="#">Ингридиенты</a></div>
+                  <!--Иконка комментариев-->
+                  <div class="recipe-item__content__footer__comments">
+                    <div class="comments-icon"></div><span id="recipe-item-num-comments" class="recipe-item__footer-number">34</span>
+                  </div>
+                  <!--Иконка рейтинга-->
+                  <div class="recipe-item__content__footer__rate">
+                    <div class="rate-icon"></div><span id="recipe-item-num-like" class="recipe-item__footer-number">235</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="recipe-item">
+              <!--Картинка-->
+              <div class="recipe-item__img"><img src="img/recipe-pic.jpg" alt="Cacke"></div>
+              <!--Содержание-->
+              <div class="recipe-item__content">
+                <!--Заголовок-->
+                <div class="recipe-item__content__header">
+                  <h3>Овощные оладьи из овощей с зеленью</h3>
+                </div>
+                <!--Фрагмент текста-->
+                <div class="recipe-item__content__short-text">
+                  <p>Ранним летом, когда на рынке овощей царит изобилие, хочется побаловать себя и близких облегченным в диетическом... плане кушаньем. К таковым можно отнести оладьи, приготовленные из кабачков, моркови или картофеля, а ещё и из молодой свекольной ботвы.</p>
+                </div>
+                <!--Подвал-->
+                <div class="recipe-item__content__footer clearfix">
+                  <!--Ссылка Ингридиенты-->
+                  <div class="recipe-item__content__footer__ing"><a href="#">Ингридиенты</a></div>
+                  <!--Иконка комментариев-->
+                  <div class="recipe-item__content__footer__comments">
+                    <div class="comments-icon"></div><span id="recipe-item-num-comments" class="recipe-item__footer-number">34</span>
+                  </div>
+                  <!--Иконка рейтинга-->
+                  <div class="recipe-item__content__footer__rate">
+                    <div class="rate-icon"></div><span id="recipe-item-num-like" class="recipe-item__footer-number">235</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="recipe-item">
+              <!--Картинка-->
+              <div class="recipe-item__img"><img src="img/recipe-pic.jpg" alt="Cacke"></div>
+              <!--Содержание-->
+              <div class="recipe-item__content">
+                <!--Заголовок-->
+                <div class="recipe-item__content__header">
+                  <h3>Овощные оладьи из овощей с зеленью</h3>
+                </div>
+                <!--Фрагмент текста-->
+                <div class="recipe-item__content__short-text">
+                  <p>Ранним летом, когда на рынке овощей царит изобилие, хочется побаловать себя и близких облегченным в диетическом... плане кушаньем. К таковым можно отнести оладьи, приготовленные из кабачков, моркови или картофеля, а ещё и из молодой свекольной ботвы.</p>
+                </div>
+                <!--Подвал-->
+                <div class="recipe-item__content__footer clearfix">
+                  <!--Ссылка Ингридиенты-->
+                  <div class="recipe-item__content__footer__ing"><a href="#">Ингридиенты</a></div>
+                  <!--Иконка комментариев-->
+                  <div class="recipe-item__content__footer__comments">
+                    <div class="comments-icon"></div><span id="recipe-item-num-comments" class="recipe-item__footer-number">34</span>
+                  </div>
+                  <!--Иконка рейтинга-->
+                  <div class="recipe-item__content__footer__rate">
+                    <div class="rate-icon"></div><span id="recipe-item-num-like" class="recipe-item__footer-number">235</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
