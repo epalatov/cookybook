@@ -9,7 +9,7 @@
   button {
     @include proxima-b(20px);
     @include btn($dark-green)
-    margin-top:28px;
+    margin-top:32px;
   }
   &__heading p {
     @include proxima-r(24px);

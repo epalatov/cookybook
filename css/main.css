@@ -118,7 +118,6 @@
     font-family: 'ProximaNova-Bold', Helvetica, sans-serif;
     font-size: 20px;
     color: #fff;
-    line-height: 1.7;
     padding: 14px 60px;
     -webkit-border-radius: 4px;
             border-radius: 4px;
@@ -126,12 +125,11 @@
     background-color: #66b260;
     border: none;
     outline: none;
-    margin-top: 28px; }
+    margin-top: 32px; }
   .random-recipe__heading p {
     font-family: 'ProximaNova-Regular', Helvetica, sans-serif;
     font-size: 24px;
     color: #888;
-    line-height: 1.7;
     color: #2d2d2d;
     margin-bottom: 40px; }
 
@@ -140,13 +138,12 @@
 
 /* My Recipes */
 .my-recipes {
-  padding-top: 35px; }
+  padding-top: 60px; }
   .my-recipes__header {
     margin-bottom: 35px;
     font-family: 'ProximaNova-Bold', Helvetica, sans-serif;
     font-size: 30px;
-    color: #2d2d2d;
-    line-height: 1.7; }
+    color: #2d2d2d; }
   .my-recipes .pagination {
     margin-bottom: 50px; }
     .my-recipes .pagination a, .my-recipes .pagination a:link {
@@ -167,7 +164,6 @@
       font-family: 'ProximaNova-Bold', Helvetica, sans-serif;
       font-size: 24px;
       color: #2d2d2d;
-      line-height: 1.7;
       height: 50px;
       line-height: 1.2;
       margin-bottom: 20px;
@@ -177,7 +173,6 @@
       font-family: 'ProximaNova-Regular', Helvetica, sans-serif;
       font-size: 16px;
       color: #919191;
-      line-height: 1.7;
       line-height: 1.4;
       height: 86px;
       overflow: hidden; }
@@ -186,8 +181,7 @@
       height: 30px;
       font-family: 'ProximaNova-Regular', Helvetica, sans-serif;
       font-size: 16px;
-      color: #2d2d2d;
-      line-height: 1.7; }
+      color: #2d2d2d; }
       .recipe-item__content__footer__ing {
         float: left;
         width: 100px;
@@ -224,12 +218,48 @@
           width: 24px;
           height: 17px; }
 
+.footer {
+  padding-top: 84px;
+  background-color: #f2f1f1;
+  height: 500px; }
+  .footer__col .list__items {
+    width: 300px; }
+    .footer__col .list__items li {
+      padding-bottom: 18px; }
+      .footer__col .list__items li i {
+        margin-right: 10px;
+        color: #896262; }
+      .footer__col .list__items li a {
+        height: 50px;
+        overflow: hidden;
+        color: #896262;
+        text-decoration: underline; }
+        .footer__col .list__items li a:hover {
+          text-decoration: none; }
+  .footer__col__header {
+    font-family: 'ProximaNova-Bold', Helvetica, sans-serif;
+    font-size: 18px;
+    color: #2d2d2d;
+    text-transform: uppercase;
+    padding-bottom: 43px; }
+
+.footer-bootom-part {
+  background-color: #484242;
+  height: 100px;
+  line-height: 100px; }
+  .footer-bootom-part .bottom-part__copy {
+    color: #f9f9f9;
+    font-family: 'ProximaNova-Regular', Helvetica, sans-serif;
+    font-size: 16px;
+    color: #e0dada; }
+  .footer-bootom-part .bottom-part__social-btn {
+    font-size: 28px; }
+
 body {
   min-width: 320px;
   font-family: 'ProximaNova-Regular', Helvetica, sans-serif;
   font-size: 18px;
-  color: #888;
-  line-height: 1.7; }
+  color: #888; }
 
 h3 {
   font-size: 24px;

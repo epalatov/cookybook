@@ -1,0 +1,53 @@
+.footer {
+  padding-top: 84px;
+  background-color: $main-grey;
+  height: 500px;
+  &__col {
+    .list__items {
+      width: 300px;
+      li {
+        padding-bottom: 18px;
+        i {
+          margin-right: 10px;
+          color: $light-brown;
+        }
+        a {
+          height: 50px;
+          overflow: hidden;
+          color: $light-brown;
+          text-decoration: underline;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+        // &:before {
+        //   display: inline-block;
+        //   font-family: "FontAwesome";
+        //   content: "\f105";
+        //   font-size: 12px;
+        //   margin-right: 10px;
+        // }
+      }
+    }
+
+    &__header {
+      @include proxima-b(18px, $main-black);
+      text-transform: uppercase;
+      padding-bottom: 43px;
+    }
+  }
+}
+
+
+.footer-bootom-part {
+  background-color: $dark-brown;
+  height: 100px;
+  line-height: 100px;
+  .bottom-part__copy {
+    color: $light-grey;
+    @include proxima-r(16px, $medium-grey);
+  }
+  .bottom-part__social-btn {
+    font-size: 28px;
+  }
+}
