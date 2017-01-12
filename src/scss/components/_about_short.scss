@@ -2,17 +2,37 @@
 
 .about-short {
   &__divider {
-    margin-top: 55px;
+    margin-top: 40px;
     @include line-double($medium-grey)
+    @media (max-width: 991px) {
+      margin-top: 20px;
+    }
+    @media (max-width: 767px) {
+      margin-top: 45px;
+    }
   }
   &__text {
     @include proxima-r(18px, $main-black);
     line-height: 1.7;
+    height: 174px;
+    overflow: hidden;
     @media (max-width: 767px) {
       text-align: center;
+      padding: 0 20px;
     }
   }
   &__avatar {
     margin-bottom: 20px;
+    img {
+      width: 180px;
+      max-width: 180px;
+      height: auto;
+      @media (max-width: 767px) {
+        width: 130px;;
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+    padding-right: 20px;
   }
 }

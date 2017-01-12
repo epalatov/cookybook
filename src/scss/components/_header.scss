@@ -22,6 +22,10 @@
       height: 55px;
       line-height: 55px;
     }
+    &:hover {
+      background-color: darken($accent-green, 5%);
+      cursor: pointer;
+    }
   }
   &__icon {
     color: #fff;
@@ -37,7 +41,7 @@
     @media (max-width: 991px) { // Medium <-Large-> ...
       margin-left: 0;}
     @media (max-width: 767px) { // Medium <-Large-> ...
-      margin-left: 28px;}
+      margin-left: 12px;}
   }
 }
 .top-menu {
@@ -55,6 +59,9 @@
     a:link {
       color: $main-black;
       text-decoration: none;
+    }
+    a:hover {
+      color: $bright-brown;
     }
   }
 }
@@ -78,12 +85,18 @@
     @media (max-width: 370px) {
       display: none;
     }
+    &:hover {
+      color: $bright-brown;
+    }
   }
     .main-search__icon {
     font-size: 20px;
     color: $dark-grey;
     @media (max-width: 370px) {
       font-size: 24px;
+    }
+    @media (max-width: 767px) {
+      margin-right: 10px;
     }
   }
 }
