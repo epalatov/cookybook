@@ -2,14 +2,23 @@
 
 .my-recipes {
   padding-top: 60px;
+  @media (max-width: 767px) {
+    padding-top: 30px;
+  }
   &__header {
     margin-bottom: 35px;
     @include proxima-b(30px, $main-black);
+    @media (max-width: 767px) {
+      text-align: center;
+    }
   }
   .pagination {
     margin-bottom: 50px;
     a, a:link {
       font-size: 16px;
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 20px;
     }
   }
 }

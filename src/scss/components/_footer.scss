@@ -2,7 +2,19 @@
   padding-top: 84px;
   background-color: $main-grey;
   height: 500px;
+  @media (max-width: 991px){
+    padding-top: 60px;
+    height: 450px;
+  }
+  @media (max-width: 767px){
+    display: none;
+  }
   &__col {
+    .col__insta-widget {
+      @media (max-width: 991px){
+        display: none;
+      }
+    }
     .list__items {
       width: 300px;
       li {
@@ -20,13 +32,6 @@
             text-decoration: none;
           }
         }
-        // &:before {
-        //   display: inline-block;
-        //   font-family: "FontAwesome";
-        //   content: "\f105";
-        //   font-size: 12px;
-        //   margin-right: 10px;
-        // }
       }
     }
 
@@ -43,6 +48,10 @@
   background-color: $dark-brown;
   height: 100px;
   line-height: 100px;
+  @media (max-width: 767px){
+    height: 60px;
+    line-height: 60px;
+  }
   .bottom-part__copy {
     color: $light-grey;
     @include proxima-r(16px, $medium-grey);

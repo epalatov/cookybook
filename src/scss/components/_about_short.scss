@@ -8,5 +8,11 @@
   &__text {
     @include proxima-r(18px, $main-black);
     line-height: 1.7;
+    @media (max-width: 767px) {
+      text-align: center;
+    }
+  }
+  &__avatar {
+    margin-bottom: 20px;
   }
 }

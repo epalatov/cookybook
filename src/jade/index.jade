@@ -31,9 +31,9 @@ html(lang="en")
     section.about-short
       div.container
         .row.gutter-0
-          .col-md-2.col-lg-2.about-short__avatar
+          .col-lg-2.col-md-3.col-sm-3.col-xs-12.text-center.about-short__avatar
             img(src="img/ava.png", alt="It's me")
-          .col-md-10.col-lg-10.about-short__text
+          .col-lg-10.col-md-9.col-sm-9.col-xs-12.about-short__text
             p Привет!<br>Ранним летом, когда на рынке овощей царит изобилие, хочется побаловать себя и близких облегченным в диетическом... плане кушаньем. К таковым можно отнести оладьи, приготовленные из кабачков, моркови или картофеля, а ещё и из молодой свекольной ботвы... #[a(href="#") Читать далее]
           hr.col-md-12.col-lg-12.about-short__divider
           
@@ -45,11 +45,11 @@ html(lang="en")
             p Мучаетесь вопросом ”Что бы приготовить?” Попробуйте случайный рецепт:
         .row.gutter-0
           .col-md-12.col-lg-12.gutter-0.random-recipe__btn-area
-            .col-lg-4.text-center
+            .col-lg-4.col-md-4.col-sm-4.text-center
               img(class="food-pic" src="img/food-left.jpg", alt="food")
-            .col-lg-4.text-center
+            .col-lg-4.col-md-4.col-sm-4.text-center
               button.random-recipe__btn Случайный рецепт
-            .col-lg-4.text-center
+            .col-lg-4.col-md-4.col-sm-4.text-center
               img(class="food-pic" src="img/food-right.jpg", alt="food")          
               
     //-My-recipes
@@ -61,50 +61,40 @@ html(lang="en")
             h1.my-recipes__header Мои рецепты
         //-Recipes
         .row
-          div(class="col-lg-#{n}")
+          div(class="col-lg-#{n} col-md-4 col-sm-6")
             include ./includes/recipe-preview.jade    
-          div(class="col-lg-#{n}")
+          div(class="col-lg-#{n} col-md-4 col-sm-6")
             include ./includes/recipe-preview.jade  
-          div(class="col-lg-#{n}")
+          div(class="col-lg-#{n} col-md-4 col-sm-6")
             include ./includes/recipe-preview.jade  
-          div(class="col-lg-#{n}")
+          div(class="col-lg-#{n} col-md-4 col-sm-6")
             include ./includes/recipe-preview.jade 
-          div(class="col-lg-#{n}")
+          div(class="col-lg-#{n} col-md-4 col-sm-6")
             include ./includes/recipe-preview.jade
-          div(class="col-lg-#{n}")
+          div(class="col-lg-#{n} col-md-4 col-sm-6")
             include ./includes/recipe-preview.jade   
-          div(class="col-lg-#{n}")
+          div(class="col-lg-#{n} col-md-4 col-sm-6")
             include ./includes/recipe-preview.jade 
-          div(class="col-lg-#{n}")
+          div(class="col-lg-#{n} col-md-4 col-sm-6")
             include ./includes/recipe-preview.jade
-          div(class="col-lg-#{n}")
+          div(class="col-lg-#{n} col-md-4 col-sm-6")
             include ./includes/recipe-preview.jade  
         //-Pagination
         .row
           .col-lg-12.text-center
             include ./includes/pagination.jade
-      
-           
-        
-    
-        
-    
-    
-    
-     script(src="src/libs/jquery/dist/jquery.min.js")
-     script(src="src/libs/bootstrap/dist/js/bootstrap.min.js")    
      
     //-Footer
     section.footer
       .container
         .row
-          .footer__col.col-lg-4
+          .footer__col.col-lg-4.col-md-4
             .col__insta-widget
               .footer__col__header 
                 span Инстаграм
               img(src="img/insta-widget.jpg", alt="")
           
-          .footer__col.col-lg-4
+          .footer__col.col-lg-4.col-md-4.col-sm-6
            .col__my-tests
               .footer__col__header 
                 span Затестим
@@ -122,7 +112,7 @@ html(lang="en")
                   i(class="fa fa-angle-right" aria-hidden="true")
                   a(href="#") Печеночный торт с морковью и луком со сладким картофелем
           
-          .footer__col.col-lg-4
+          .footer__col.col-lg-4.col-md-4.col-sm-6
             .col__last-comments
               .footer__col__header
                 span Последние комментарии
@@ -144,10 +134,13 @@ html(lang="en")
     section.footer-bootom-part
       .container   
           .row 
-            .bottom-part__copy.col-lg-6
+            .bottom-part__copy.col-lg-6.col-md-6.col-sm-6.col-xs-6
               span.copy cookybook, 2017
-            .bottom-part__social-btn.text-right.col-lg-6
+            .bottom-part__social-btn.text-right.col-lg-6.col-md-6.col-sm-6.col-xs-6
               i(class="fa fa-instagram" aria-hidden="true")
+              
+    script(src="src/libs/jquery/dist/jquery.min.js")
+    script(src="src/libs/bootstrap/dist/js/bootstrap.min.js")    
           
       
      
