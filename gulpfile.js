@@ -41,7 +41,7 @@ gulp.task('vendor-scripts', function() {
 
 gulp.task('scripts', function() {
     return gulp.src('src/js/*.js')
-        .pipe(concat('main.js')) // Собираем их в кучу в новом файле main.min.js
+        .pipe(concat('main.js')) // Собираем их в кучу в новом файле main.js
         //.pipe(uglify())
         .pipe(gulp.dest('js/')); // Выгружаем в папку js
 });
@@ -67,6 +67,7 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 gulp.task('watch', ['browser-sync', 'scss','jade','vendor-scripts','scripts', 'css-libs'], function() {
     gulp.watch('src/scss/**/*.scss', ['scss']); // Наблюдение за sass файлами
     gulp.watch('src/jade/**/*.jade', ['jade']); // Наблюдение за Jade файлами
+    gulp.watch('src/js/**/*.js', ['scripts']); // Наблюдение за JS файлами
     gulp.watch('src/js/**/*.js', browserSync.reload); // Наблюдение за JS файлами
 
 });
