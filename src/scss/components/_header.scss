@@ -5,7 +5,7 @@
   margin-bottom: 55px;
   background-color: $main-grey;
   @media (max-width: 767px) { // small <-Small-> Medium
-    background-color: $accent-green;
+    //background-color: $accent-green;
     height: 55px;
   }
 }
@@ -47,9 +47,9 @@
 .top-menu {
   display: inline-block;
   line-height: 80px;
-  // @media (max-width: 991px) {
-  //   display: none;
-  // }
+  @media (max-width: 767px) {
+    display: none;
+  }
 &__item {
     display: inline-block;
     font-family: 'ProximaNova-Regular', Helvetica, sans-serif;

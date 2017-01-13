@@ -5,22 +5,38 @@
   height: 78px;
   background-color: $accent-green;
   z-index: 999;
+  @media (max-width: 767px){
+    top: 55px;
+  }
   &__header {
     line-height: 78px;
     @include proxima-b(20px, $main-black);
+    @media (max-width: 767px){
+      display: none;
+    }
   }
   &__content {
     background-color: $dark-brown;
+    @media (max-width: 767px){
+      padding: 0 10px;
+    }
   }
 }
 
 .drop-down-top-menu__content {
   padding-top: 50px;
-  padding-bottom: 30px;
+  padding-bottom: 35px;
+  @media (max-width: 767px){
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 
 .top-menu__content__category-item {
   padding-bottom: 26px;
+  @media (max-width: 767px){
+    padding-bottom: 18px;
+  }
 
   &__list {
     line-height: 1.3;
@@ -30,7 +46,7 @@
     display: inline;
     @include proxima-r(16px);
     a, a:link, a:active {
-      color: lighten($dark-brown, 36%);;
+      color: lighten($dark-brown, 38%);;
       text-decoration: none;
     }
     a:hover {
@@ -42,6 +58,9 @@
     display: inline-block;
     margin-bottom: 10px;
     @include proxima-b(18px);
-    color: $light-grey;
+    color: $medium-grey;
+    @media (max-width: 767px){
+      margin-bottom: 5px;;
+    }
   }
 }

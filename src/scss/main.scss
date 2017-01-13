@@ -38,9 +38,6 @@ h3 {
 .gutter-0 > [class^="col-"], .gutter-0 > [class^=" col-"]{
   padding-right: 0;
   padding-left: 0;
-  @media (max-width: 767px) {
-    padding: 0 20px;
-  }
 }
 
 // Debug
