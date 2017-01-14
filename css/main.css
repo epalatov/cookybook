@@ -279,6 +279,8 @@
       margin-bottom: 20px;
       margin-top: 0;
       overflow: hidden; }
+      .recipe-item__content__header h3 a {
+        color: #2d2d2d; }
     .recipe-item__content__short-text {
       font-family: 'ProximaNova-Regular', Helvetica, sans-serif;
       font-size: 16px;

@@ -1,5 +1,4 @@
 var dropDownMenu = document.getElementById('drop-down-top-menu');
-
 function toggle(){
   dropDownMenu.classList.toggle('hidden');
   dropDownMenu.classList.toggle('visible');

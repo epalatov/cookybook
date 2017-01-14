@@ -50,6 +50,9 @@
       margin-bottom: 20px;
       margin-top: 0;
       overflow: hidden;
+      h3 a {
+        color: $main-black;
+      }
     }
     //Фрагмент текста
     &__short-text{

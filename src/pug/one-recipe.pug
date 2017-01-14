@@ -1,0 +1,130 @@
+extends templates/page
+
+block head
+  title Cookybook | Оладьи из овощей
+  meta(http-equiv="X-UA-Compatible" content="IE=edge")
+  meta(name="viewport" content="width=device-width, initial-scale=1.0")
+  meta(http-equiv="X-UA-Compatible" content="ie=edge")
+  meta(charset="UTF-8")
+  link(rel="stylesheet" href="css/font-awesome.css")
+  link(rel="stylesheet" href="css/bootstrap.css")
+  link(rel="stylesheet" href="css/reset.css")
+  link(rel="stylesheet" href="css/main.css")
+
+block content
+
+  //-About-short and random recipe
+  section.about-and-recipe
+    div.container
+      .row
+        .col-lg-8.about-short
+          .row.gutter-0
+            .col-lg-3.col-md-3.col-sm-3.col-xs-12.text-center.about-short__avatar
+              img(src="img/ava.png", alt="It's me")
+            .col-lg-8.col-lg-offset-1.col-md-7.col-md-offset-1.col-sm-8.col-sm-offset-1.col-xs-12.about-short__text
+              p Привет!<br>Ранним летом, когда на рынке овощей царит изобилие, хочется побаловать себя и близких облегченным в диетическом... плане кушаньем. К таковым можно отнести оладьи, приготовленные из кабачков, моркови или картофеля, а ещё и из молодой... #[a(href="#") Читать далее]
+            hr.col-md-12.col-lg-12.col-xs-12.about-short__divider
+
+
+        .col-lg-4.random-recipe
+          .row.gutter-0
+            .col-md-12.random-recipe__heading
+              p Мучает вопрос: «Что приготовить?»<br>Попробуйте случайный рецепт:
+          .row.gutter-0
+            .col-md-12.col-lg-12.gutter-0.random-recipe__btn-area
+              .col-lg-4.col-md-4.col-sm-4.text-center
+                img(class="food-pic" src="img/food-left.jpg", alt="food")
+              .col-lg-12.col-md-4.col-sm-4.text-center
+                button.random-recipe__btn Случайный рецепт
+              .col-lg-4.col-md-4.col-sm-4.text-center
+                img(class="food-pic" src="img/food-right.jpg", alt="food")
+
+  //-My-recipes
+  section.my-recipes
+    div.container
+      //-Head of section
+      .row
+        .col-lg-12
+          h1.my-recipes__header Мои рецепты
+      //-Recipes
+      .row
+        div(class="col-lg-#{n} col-md-4 col-sm-6")
+          include ./includes/recipe-preview.pug
+        div(class="col-lg-#{n} col-md-4 col-sm-6")
+          include ./includes/recipe-preview.pug
+        div(class="col-lg-#{n} col-md-4 col-sm-6")
+          include ./includes/recipe-preview.pug
+        div(class="col-lg-#{n} col-md-4 col-sm-6")
+          include ./includes/recipe-preview.pug
+        div(class="col-lg-#{n} col-md-4 col-sm-6")
+          include ./includes/recipe-preview.pug
+        div(class="col-lg-#{n} col-md-4 col-sm-6")
+          include ./includes/recipe-preview.pug
+        div(class="col-lg-#{n} col-md-4 col-sm-6")
+          include ./includes/recipe-preview.pug
+        div(class="col-lg-#{n} col-md-4 col-sm-6")
+          include ./includes/recipe-preview.pug
+        div(class="col-lg-#{n} col-md-4 col-sm-6")
+          include ./includes/recipe-preview.pug
+      //-Pagination
+      .row
+        .col-lg-12.text-center
+          include ./includes/pagination.pug
+
+  //-Footer
+  section.footer
+    .container
+      .row
+        .footer__col.col-lg-4.col-md-4
+          .col__insta-widget
+            .footer__col__header
+              span Инстаграм
+            img(src="img/insta-widget.jpg", alt="")
+
+        .footer__col.col-lg-4.col-md-4.col-sm-6
+         .col__my-tests
+            .footer__col__header
+              span Затестим
+            ul.list__items
+              li
+                i(class="fa fa-angle-right" aria-hidden="true")
+                a(href="#") Запеканка Пармантье со сладким картофелем
+              li
+                i(class="fa fa-angle-right" aria-hidden="true")
+                a(href="#") Печеночный торт с морковью и луком со сладким картофелем
+              li
+                i(class="fa fa-angle-right" aria-hidden="true")
+                a(href="#") Лазанья классическая с мясом со сладким картофелем
+              li
+                i(class="fa fa-angle-right" aria-hidden="true")
+                a(href="#") Печеночный торт с морковью и луком со сладким картофелем
+
+        .footer__col.col-lg-4.col-md-4.col-sm-6
+          .col__last-comments
+            .footer__col__header
+              span Последние комментарии
+            ul.list__items
+              li
+                i(class="fa fa-angle-right" aria-hidden="true")
+                a(href="#") Запеканка Пармантье со сладким картофелем
+              li
+                i(class="fa fa-angle-right" aria-hidden="true")
+                a(href="#") Печеночный торт с морковью и луком со сладким картофелем
+              li
+                i(class="fa fa-angle-right" aria-hidden="true")
+                a(href="#") Лазанья классическая с мясом со сладким картофелем
+              li
+                i(class="fa fa-angle-right" aria-hidden="true")
+                a(href="#") Печеночный торт с морковью и луком со сладким картофелем
+
+  //-Footer bottom
+  section.footer-bootom-part
+    .container
+        .row
+          .bottom-part__copy.col-lg-6.col-md-6.col-sm-6.col-xs-6
+            span.copy cookybook, 2017
+          .bottom-part__social-btn.text-right.col-lg-6.col-md-6.col-sm-6.col-xs-6
+            i(class="fa fa-instagram" aria-hidden="true")
+
+  script(src="js/libs.min.js")
+  script(src="js/main.js")

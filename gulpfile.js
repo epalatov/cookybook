@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'), //Подключаем Sass пакет
-    jade = require('gulp-jade'), //Подключаем Jade пакет
+    // = require('gulp-pug'), //Подключаем pug пакет
+    pug = require('gulp-pug'),
     browserSync = require('browser-sync'),//Подключаем LiveReload
     concat      = require('gulp-concat'), // Подключаем gulp-concat (для конкатенации файлов)
     uglify      = require('gulp-uglifyjs'), // Подключаем gulp-uglifyjs (для сжатия JS)
@@ -20,12 +21,12 @@ gulp.task('scss', function(){ // Создаем таск "sass"
     .pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
 });
 
-gulp.task('jade', function(){ // Создаем таск "jade"
-  gulp.src('./src/jade/index.jade') // Берем источник
-    .pipe(jade({
+gulp.task('pug', function(){ // Создаем таск "pug"
+  gulp.src('./src/pug/*.pug') // Берем источник
+    .pipe(pug({
       pretty: true
-    })) // Преобразуем Jade в html посредством gulp-jade
-    .pipe(gulp.dest('./')) // Выгружаем результата в папку app
+    })) // Преобразуем pug в html посредством gulp-pug
+    .pipe(gulp.dest('./'))
     .pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
 });
 
@@ -64,9 +65,9 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 });
 
 
-gulp.task('watch', ['browser-sync', 'scss','jade','vendor-scripts','scripts', 'css-libs'], function() {
+gulp.task('watch', ['browser-sync', 'scss','pug','vendor-scripts','scripts', 'css-libs'], function() {
     gulp.watch('src/scss/**/*.scss', ['scss']); // Наблюдение за sass файлами
-    gulp.watch('src/jade/**/*.jade', ['jade']); // Наблюдение за Jade файлами
+    gulp.watch('src/pug/**/*.pug', ['pug']); // Наблюдение за Pug файлами
     gulp.watch('src/js/**/*.js', ['scripts']); // Наблюдение за JS файлами
     gulp.watch('src/js/**/*.js', browserSync.reload); // Наблюдение за JS файлами
 
