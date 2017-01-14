@@ -52,6 +52,9 @@
       overflow: hidden;
       h3 a {
         color: $main-black;
+        &:hover {
+          text-decoration: none;
+        }
       }
     }
     //Фрагмент текста

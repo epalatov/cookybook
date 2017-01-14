@@ -2,7 +2,112 @@ doctype html
 html(lang="en")
   head
     block head
-      title Default title
+      meta(http-equiv="X-UA-Compatible" content="IE=edge")
+      meta(name="viewport" content="width=device-width, initial-scale=1.0")
+      meta(http-equiv="X-UA-Compatible" content="ie=edge")
+      meta(charset="UTF-8")
+      link(rel="stylesheet" href="css/font-awesome.css")
+      link(rel="stylesheet" href="css/bootstrap.css")
+      link(rel="stylesheet" href="css/reset.css")
   body
     block content
-      h1 Default Header
+      //-Header
+      header.main-head
+        div.container
+          div.row.gutter-0
+            //-Menu button
+            div#menu-btn.col-md-1.col-xs-12.col-sm-2.sub-menu-btn
+              div.sub-menu-btn__wrapper
+                i.fa.fa-bars.sub-menu-btn__icon(aria-hidden="true")
+            //-Logo
+            div.col-md-2.col-xs-8.col-sm-3.logo
+              a(href="index.html"): img(src='img/logo.png')
+            //-Menu
+            nav.col-md-6.col-sm-4.top-menu
+              li.top-menu__item: a(href="my-tests.html") Затестим
+              li.top-menu__item: a(href="my-tests.html") Обо мне
+            //-Search
+            div.col-md-3.col-xs-4.col-sm-3.main-search
+              div.main-search__wrapper
+                i.fa.fa-search.main-search__icon(aria-hidden="true")
+                button.main-search__btn Поиск
+      //-Dropdown Menu
+      section#drop-down-top-menu.drop-down-top-menu.hidden
+        .container
+          .row
+            .col-lg-12.drop-down-top-menu__header
+              span Рубрики
+        section.drop-down-top-menu__content
+          .container
+            .row
+              .col-lg-3.col-md-3.col-sm-4
+                include ../includes/category-item.pug
+              .col-lg-3.col-md-3.col-sm-4
+                include ../includes/category-item.pug
+              .col-lg-3.col-md-3.col-sm-4
+                include ../includes/category-item.pug
+              .col-lg-3.col-md-3.col-sm-4
+                include ../includes/category-item.pug
+              .col-lg-3.col-md-3.col-sm-4
+                include ../includes/category-item.pug
+              .col-lg-3.col-md-3.col-sm-4
+                include ../includes/category-item.pug
+              .col-lg-3.col-md-3.col-sm-4
+                include ../includes/category-item.pug
+              .col-lg-3.col-md-3.col-sm-4
+                include ../includes/category-item.pug
+
+    block footer
+      //Footer
+      section.footer
+        .container
+          .row
+            .footer__col.col-lg-4.col-md-4
+              .col__insta-widget
+                .footer__col__header
+                  span Инстаграм
+                img(src="img/insta-widget.jpg", alt="")
+
+            .footer__col.col-lg-4.col-md-4.col-sm-6
+             .col__my-tests
+                .footer__col__header
+                  span Затестим
+                ul.list__items
+                  li
+                    i(class="fa fa-angle-right" aria-hidden="true")
+                    a(href="#") Запеканка Пармантье со сладким картофелем
+                  li
+                    i(class="fa fa-angle-right" aria-hidden="true")
+                    a(href="#") Печеночный торт с морковью и луком со сладким картофелем
+                  li
+                    i(class="fa fa-angle-right" aria-hidden="true")
+                    a(href="#") Лазанья классическая с мясом со сладким картофелем
+                  li
+                    i(class="fa fa-angle-right" aria-hidden="true")
+                    a(href="#") Печеночный торт с морковью и луком со сладким картофелем
+
+            .footer__col.col-lg-4.col-md-4.col-sm-6
+              .col__last-comments
+                .footer__col__header
+                  span Последние комментарии
+                ul.list__items
+                  li
+                    i(class="fa fa-angle-right" aria-hidden="true")
+                    a(href="#") Запеканка Пармантье со сладким картофелем
+                  li
+                    i(class="fa fa-angle-right" aria-hidden="true")
+                    a(href="#") Печеночный торт с морковью и луком со сладким картофелем
+                  li
+                    i(class="fa fa-angle-right" aria-hidden="true")
+                    a(href="#") Лазанья классическая с мясом со сладким картофелем
+                  li
+                    i(class="fa fa-angle-right" aria-hidden="true")
+                    a(href="#") Печеночный торт с морковью и луком со сладким картофелем
+      //-Footer bottom
+      section.footer-bootom-part
+        .container
+            .row
+              .bottom-part__copy.col-lg-6.col-md-6.col-sm-6.col-xs-6
+                span.copy cookybook, 2017
+              .bottom-part__social-btn.text-right.col-lg-6.col-md-6.col-sm-6.col-xs-6
+                i(class="fa fa-instagram" aria-hidden="true")

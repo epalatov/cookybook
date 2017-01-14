@@ -12,261 +12,280 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <section class="about-and-recipe">
+    <header class="main-head">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-8 about-short">
-            <div class="row gutter-0">
-              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center about-short__avatar"><img src="img/ava.png" alt="It's me"></div>
-              <div class="col-lg-8 col-lg-offset-1 col-md-7 col-md-offset-1 col-sm-8 col-sm-offset-1 col-xs-12 about-short__text">
-                <p>Привет!<br>Ранним летом, когда на рынке овощей царит изобилие, хочется побаловать себя и близких облегченным в диетическом... плане кушаньем. К таковым можно отнести оладьи, приготовленные из кабачков, моркови или картофеля, а ещё и из молодой... <a href="#">Читать далее</a></p>
-              </div>
-              <hr class="col-md-12 col-lg-12 col-xs-12 about-short__divider">
-            </div>
+        <div class="row gutter-0">
+          <div class="col-md-1 col-xs-12 col-sm-2 sub-menu-btn" id="menu-btn">
+            <div class="sub-menu-btn__wrapper"><i class="fa fa-bars sub-menu-btn__icon" aria-hidden="true"></i></div>
           </div>
-          <div class="col-lg-4 random-recipe">
-            <div class="row gutter-0">
-              <div class="col-md-12 random-recipe__heading">
-                <p>Мучает вопрос: «Что приготовить?»<br>Попробуйте случайный рецепт:</p>
-              </div>
-            </div>
-            <div class="row gutter-0">
-              <div class="col-md-12 col-lg-12 gutter-0 random-recipe__btn-area">
-                <div class="col-lg-4 col-md-4 col-sm-4 text-center"><img class="food-pic" src="img/food-left.jpg" alt="food"></div>
-                <div class="col-lg-12 col-md-4 col-sm-4 text-center">
-                  <button class="random-recipe__btn">Случайный рецепт</button>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 text-center"><img class="food-pic" src="img/food-right.jpg" alt="food"></div>
-              </div>
+          <div class="col-md-2 col-xs-8 col-sm-3 logo"><a href="index.html"><img src="img/logo.png"></a></div>
+          <nav class="col-md-6 col-sm-4 top-menu">
+            <li class="top-menu__item"><a href="my-tests.html">Затестим</a></li>
+            <li class="top-menu__item"><a href="my-tests.html">Обо мне</a></li>
+          </nav>
+          <div class="col-md-3 col-xs-4 col-sm-3 main-search">
+            <div class="main-search__wrapper"><i class="fa fa-search main-search__icon" aria-hidden="true"></i>
+              <button class="main-search__btn">Поиск</button>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="my-recipes">
+    </header>
+    <section class="drop-down-top-menu hidden" id="drop-down-top-menu">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12">
-            <h1 class="my-recipes__header">Мои рецепты</h1>
+          <div class="col-lg-12 drop-down-top-menu__header"><span>Рубрики</span></div>
+        </div>
+      </div>
+      <section class="drop-down-top-menu__content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-4">
+              <div class="top-menu__content__category-item"><span class="top-menu__content__category-item__header">Первое блюдо</span>
+                <ul class="top-menu__content__category-item__list">
+                  <li><a href="#">борщ</a></li>
+                  <li><a href="#">бульон</a></li>
+                  <li><a href="#">окрошка</a></li>
+                  <li><a href="#">свекольник</a></li>
+                  <li><a href="#">солянка</a></li>
+                  <li><a href="#">суп</a></li>
+                  <li><a href="#">уха</a></li>
+                  <li><a href="#">борщ</a></li>
+                  <li><a href="#">бульон</a></li>
+                  <li><a href="#">окрошка</a></li>
+                  <li><a href="#">свекольник</a></li>
+                  <li><a href="#">солянка</a></li>
+                  <li><a href="#">суп</a></li>
+                  <li><a href="#">уха</a></li>
+                  <li><a href="#">окрошка</a></li>
+                  <li><a href="#">свекольник</a></li>
+                  <li><a href="#">солянка</a></li>
+                  <li><a href="#">суп</a></li>
+                  <li><a href="#">уха</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4">
+              <div class="top-menu__content__category-item"><span class="top-menu__content__category-item__header">Первое блюдо</span>
+                <ul class="top-menu__content__category-item__list">
+                  <li><a href="#">борщ</a></li>
+                  <li><a href="#">бульон</a></li>
+                  <li><a href="#">окрошка</a></li>
+                  <li><a href="#">свекольник</a></li>
+                  <li><a href="#">солянка</a></li>
+                  <li><a href="#">суп</a></li>
+                  <li><a href="#">уха</a></li>
+                  <li><a href="#">борщ</a></li>
+                  <li><a href="#">бульон</a></li>
+                  <li><a href="#">окрошка</a></li>
+                  <li><a href="#">свекольник</a></li>
+                  <li><a href="#">солянка</a></li>
+                  <li><a href="#">суп</a></li>
+                  <li><a href="#">уха</a></li>
+                  <li><a href="#">окрошка</a></li>
+                  <li><a href="#">свекольник</a></li>
+                  <li><a href="#">солянка</a></li>
+                  <li><a href="#">суп</a></li>
+                  <li><a href="#">уха</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4">
+              <div class="top-menu__content__category-item"><span class="top-menu__content__category-item__header">Первое блюдо</span>
+                <ul class="top-menu__content__category-item__list">
+                  <li><a href="#">борщ</a></li>
+                  <li><a href="#">бульон</a></li>
+                  <li><a href="#">окрошка</a></li>
+                  <li><a href="#">свекольник</a></li>
+                  <li><a href="#">солянка</a></li>
+                  <li><a href="#">суп</a></li>
+                  <li><a href="#">уха</a></li>
+                  <li><a href="#">борщ</a></li>
+                  <li><a href="#">бульон</a></li>
+                  <li><a href="#">окрошка</a></li>
+                  <li><a href="#">свекольник</a></li>
+                  <li><a href="#">солянка</a></li>
+                  <li><a href="#">суп</a></li>
+                  <li><a href="#">уха</a></li>
+                  <li><a href="#">окрошка</a></li>
+                  <li><a href="#">свекольник</a></li>
+                  <li><a href="#">солянка</a></li>
+                  <li><a href="#">суп</a></li>
+                  <li><a href="#">уха</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4">
+              <div class="top-menu__content__category-item"><span class="top-menu__content__category-item__header">Первое блюдо</span>
+                <ul class="top-menu__content__category-item__list">
+                  <li><a href="#">борщ</a></li>
+                  <li><a href="#">бульон</a></li>
+                  <li><a href="#">окрошка</a></li>
+                  <li><a href="#">свекольник</a></li>
+                  <li><a href="#">солянка</a></li>
+                  <li><a href="#">суп</a></li>
+                  <li><a href="#">уха</a></li>
+                  <li><a href="#">борщ</a></li>
+                  <li><a href="#">бульон</a></li>
+                  <li><a href="#">окрошка</a></li>
+                  <li><a href="#">свекольник</a></li>
+                  <li><a href="#">солянка</a></li>
+                  <li><a href="#">суп</a></li>
+                  <li><a href="#">уха</a></li>
+                  <li><a href="#">окрошка</a></li>
+                  <li><a href="#">свекольник</a></li>
+                  <li><a href="#">солянка</a></li>
+                  <li><a href="#">суп</a></li>
+                  <li><a href="#">уха</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4">
+              <div class="top-menu__content__category-item"><span class="top-menu__content__category-item__header">Первое блюдо</span>
+                <ul class="top-menu__content__category-item__list">
+                  <li><a href="#">борщ</a></li>
+                  <li><a href="#">бульон</a></li>
+                  <li><a href="#">окрошка</a></li>
+                  <li><a href="#">свекольник</a></li>
+                  <li><a href="#">солянка</a></li>
+                  <li><a href="#">суп</a></li>
+                  <li><a href="#">уха</a></li>
+                  <li><a href="#">борщ</a></li>
+                  <li><a href="#">бульон</a></li>
+                  <li><a href="#">окрошка</a></li>
+                  <li><a href="#">свекольник</a></li>
+                  <li><a href="#">солянка</a></li>
+                  <li><a href="#">суп</a></li>
+                  <li><a href="#">уха</a></li>
+                  <li><a href="#">окрошка</a></li>
+                  <li><a href="#">свекольник</a></li>
+                  <li><a href="#">солянка</a></li>
+                  <li><a href="#">суп</a></li>
+                  <li><a href="#">уха</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4">
+              <div class="top-menu__content__category-item"><span class="top-menu__content__category-item__header">Первое блюдо</span>
+                <ul class="top-menu__content__category-item__list">
+                  <li><a href="#">борщ</a></li>
+                  <li><a href="#">бульон</a></li>
+                  <li><a href="#">окрошка</a></li>
+                  <li><a href="#">свекольник</a></li>
+                  <li><a href="#">солянка</a></li>
+                  <li><a href="#">суп</a></li>
+                  <li><a href="#">уха</a></li>
+                  <li><a href="#">борщ</a></li>
+                  <li><a href="#">бульон</a></li>
+                  <li><a href="#">окрошка</a></li>
+                  <li><a href="#">свекольник</a></li>
+                  <li><a href="#">солянка</a></li>
+                  <li><a href="#">суп</a></li>
+                  <li><a href="#">уха</a></li>
+                  <li><a href="#">окрошка</a></li>
+                  <li><a href="#">свекольник</a></li>
+                  <li><a href="#">солянка</a></li>
+                  <li><a href="#">суп</a></li>
+                  <li><a href="#">уха</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4">
+              <div class="top-menu__content__category-item"><span class="top-menu__content__category-item__header">Первое блюдо</span>
+                <ul class="top-menu__content__category-item__list">
+                  <li><a href="#">борщ</a></li>
+                  <li><a href="#">бульон</a></li>
+                  <li><a href="#">окрошка</a></li>
+                  <li><a href="#">свекольник</a></li>
+                  <li><a href="#">солянка</a></li>
+                  <li><a href="#">суп</a></li>
+                  <li><a href="#">уха</a></li>
+                  <li><a href="#">борщ</a></li>
+                  <li><a href="#">бульон</a></li>
+                  <li><a href="#">окрошка</a></li>
+                  <li><a href="#">свекольник</a></li>
+                  <li><a href="#">солянка</a></li>
+                  <li><a href="#">суп</a></li>
+                  <li><a href="#">уха</a></li>
+                  <li><a href="#">окрошка</a></li>
+                  <li><a href="#">свекольник</a></li>
+                  <li><a href="#">солянка</a></li>
+                  <li><a href="#">суп</a></li>
+                  <li><a href="#">уха</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4">
+              <div class="top-menu__content__category-item"><span class="top-menu__content__category-item__header">Первое блюдо</span>
+                <ul class="top-menu__content__category-item__list">
+                  <li><a href="#">борщ</a></li>
+                  <li><a href="#">бульон</a></li>
+                  <li><a href="#">окрошка</a></li>
+                  <li><a href="#">свекольник</a></li>
+                  <li><a href="#">солянка</a></li>
+                  <li><a href="#">суп</a></li>
+                  <li><a href="#">уха</a></li>
+                  <li><a href="#">борщ</a></li>
+                  <li><a href="#">бульон</a></li>
+                  <li><a href="#">окрошка</a></li>
+                  <li><a href="#">свекольник</a></li>
+                  <li><a href="#">солянка</a></li>
+                  <li><a href="#">суп</a></li>
+                  <li><a href="#">уха</a></li>
+                  <li><a href="#">окрошка</a></li>
+                  <li><a href="#">свекольник</a></li>
+                  <li><a href="#">солянка</a></li>
+                  <li><a href="#">суп</a></li>
+                  <li><a href="#">уха</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
+    </section>
+    <!--Bread crumbs-->
+    <section class="bread-crumbs">
+      <div class="container">
         <div class="row">
-          <div class="col-lg-#{n} col-md-4 col-sm-6">
-            <div class="recipe-item">
-              <div class="recipe-item__img"><img src="img/recipe-pic.jpg" alt="Cacke"></div>
-              <div class="recipe-item__content">
-                <div class="recipe-item__content__header">
-                  <h3><a href="one-recipe.html">Овощные оладьи из овощей с зеленью</a></h3>
-                </div>
-                <div class="recipe-item__content__short-text">
-                  <p>Ранним летом, когда на рынке овощей царит изобилие, хочется побаловать себя и близких облегченным в диетическом... плане кушаньем. К таковым можно отнести оладьи, приготовленные из кабачков, моркови или картофеля, а ещё и из молодой свекольной ботвы.</p>
-                </div>
-                <div class="recipe-item__content__footer clearfix">
-                  <div class="recipe-item__content__footer__ing"><a href="#">Ингридиенты</a></div>
-                  <div class="recipe-item__content__footer__comments">
-                    <div class="comments-icon"></div><span class="recipe-item__footer-number" id="recipe-item-num-comments">34</span>
-                  </div>
-                  <div class="recipe-item__content__footer__rate">
-                    <div class="rate-icon"></div><span class="recipe-item__footer-number" id="recipe-item-num-like">235</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-#{n} col-md-4 col-sm-6">
-            <div class="recipe-item">
-              <div class="recipe-item__img"><img src="img/recipe-pic.jpg" alt="Cacke"></div>
-              <div class="recipe-item__content">
-                <div class="recipe-item__content__header">
-                  <h3><a href="one-recipe.html">Овощные оладьи из овощей с зеленью</a></h3>
-                </div>
-                <div class="recipe-item__content__short-text">
-                  <p>Ранним летом, когда на рынке овощей царит изобилие, хочется побаловать себя и близких облегченным в диетическом... плане кушаньем. К таковым можно отнести оладьи, приготовленные из кабачков, моркови или картофеля, а ещё и из молодой свекольной ботвы.</p>
-                </div>
-                <div class="recipe-item__content__footer clearfix">
-                  <div class="recipe-item__content__footer__ing"><a href="#">Ингридиенты</a></div>
-                  <div class="recipe-item__content__footer__comments">
-                    <div class="comments-icon"></div><span class="recipe-item__footer-number" id="recipe-item-num-comments">34</span>
-                  </div>
-                  <div class="recipe-item__content__footer__rate">
-                    <div class="rate-icon"></div><span class="recipe-item__footer-number" id="recipe-item-num-like">235</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-#{n} col-md-4 col-sm-6">
-            <div class="recipe-item">
-              <div class="recipe-item__img"><img src="img/recipe-pic.jpg" alt="Cacke"></div>
-              <div class="recipe-item__content">
-                <div class="recipe-item__content__header">
-                  <h3><a href="one-recipe.html">Овощные оладьи из овощей с зеленью</a></h3>
-                </div>
-                <div class="recipe-item__content__short-text">
-                  <p>Ранним летом, когда на рынке овощей царит изобилие, хочется побаловать себя и близких облегченным в диетическом... плане кушаньем. К таковым можно отнести оладьи, приготовленные из кабачков, моркови или картофеля, а ещё и из молодой свекольной ботвы.</p>
-                </div>
-                <div class="recipe-item__content__footer clearfix">
-                  <div class="recipe-item__content__footer__ing"><a href="#">Ингридиенты</a></div>
-                  <div class="recipe-item__content__footer__comments">
-                    <div class="comments-icon"></div><span class="recipe-item__footer-number" id="recipe-item-num-comments">34</span>
-                  </div>
-                  <div class="recipe-item__content__footer__rate">
-                    <div class="rate-icon"></div><span class="recipe-item__footer-number" id="recipe-item-num-like">235</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-#{n} col-md-4 col-sm-6">
-            <div class="recipe-item">
-              <div class="recipe-item__img"><img src="img/recipe-pic.jpg" alt="Cacke"></div>
-              <div class="recipe-item__content">
-                <div class="recipe-item__content__header">
-                  <h3><a href="one-recipe.html">Овощные оладьи из овощей с зеленью</a></h3>
-                </div>
-                <div class="recipe-item__content__short-text">
-                  <p>Ранним летом, когда на рынке овощей царит изобилие, хочется побаловать себя и близких облегченным в диетическом... плане кушаньем. К таковым можно отнести оладьи, приготовленные из кабачков, моркови или картофеля, а ещё и из молодой свекольной ботвы.</p>
-                </div>
-                <div class="recipe-item__content__footer clearfix">
-                  <div class="recipe-item__content__footer__ing"><a href="#">Ингридиенты</a></div>
-                  <div class="recipe-item__content__footer__comments">
-                    <div class="comments-icon"></div><span class="recipe-item__footer-number" id="recipe-item-num-comments">34</span>
-                  </div>
-                  <div class="recipe-item__content__footer__rate">
-                    <div class="rate-icon"></div><span class="recipe-item__footer-number" id="recipe-item-num-like">235</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-#{n} col-md-4 col-sm-6">
-            <div class="recipe-item">
-              <div class="recipe-item__img"><img src="img/recipe-pic.jpg" alt="Cacke"></div>
-              <div class="recipe-item__content">
-                <div class="recipe-item__content__header">
-                  <h3><a href="one-recipe.html">Овощные оладьи из овощей с зеленью</a></h3>
-                </div>
-                <div class="recipe-item__content__short-text">
-                  <p>Ранним летом, когда на рынке овощей царит изобилие, хочется побаловать себя и близких облегченным в диетическом... плане кушаньем. К таковым можно отнести оладьи, приготовленные из кабачков, моркови или картофеля, а ещё и из молодой свекольной ботвы.</p>
-                </div>
-                <div class="recipe-item__content__footer clearfix">
-                  <div class="recipe-item__content__footer__ing"><a href="#">Ингридиенты</a></div>
-                  <div class="recipe-item__content__footer__comments">
-                    <div class="comments-icon"></div><span class="recipe-item__footer-number" id="recipe-item-num-comments">34</span>
-                  </div>
-                  <div class="recipe-item__content__footer__rate">
-                    <div class="rate-icon"></div><span class="recipe-item__footer-number" id="recipe-item-num-like">235</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-#{n} col-md-4 col-sm-6">
-            <div class="recipe-item">
-              <div class="recipe-item__img"><img src="img/recipe-pic.jpg" alt="Cacke"></div>
-              <div class="recipe-item__content">
-                <div class="recipe-item__content__header">
-                  <h3><a href="one-recipe.html">Овощные оладьи из овощей с зеленью</a></h3>
-                </div>
-                <div class="recipe-item__content__short-text">
-                  <p>Ранним летом, когда на рынке овощей царит изобилие, хочется побаловать себя и близких облегченным в диетическом... плане кушаньем. К таковым можно отнести оладьи, приготовленные из кабачков, моркови или картофеля, а ещё и из молодой свекольной ботвы.</p>
-                </div>
-                <div class="recipe-item__content__footer clearfix">
-                  <div class="recipe-item__content__footer__ing"><a href="#">Ингридиенты</a></div>
-                  <div class="recipe-item__content__footer__comments">
-                    <div class="comments-icon"></div><span class="recipe-item__footer-number" id="recipe-item-num-comments">34</span>
-                  </div>
-                  <div class="recipe-item__content__footer__rate">
-                    <div class="rate-icon"></div><span class="recipe-item__footer-number" id="recipe-item-num-like">235</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-#{n} col-md-4 col-sm-6">
-            <div class="recipe-item">
-              <div class="recipe-item__img"><img src="img/recipe-pic.jpg" alt="Cacke"></div>
-              <div class="recipe-item__content">
-                <div class="recipe-item__content__header">
-                  <h3><a href="one-recipe.html">Овощные оладьи из овощей с зеленью</a></h3>
-                </div>
-                <div class="recipe-item__content__short-text">
-                  <p>Ранним летом, когда на рынке овощей царит изобилие, хочется побаловать себя и близких облегченным в диетическом... плане кушаньем. К таковым можно отнести оладьи, приготовленные из кабачков, моркови или картофеля, а ещё и из молодой свекольной ботвы.</p>
-                </div>
-                <div class="recipe-item__content__footer clearfix">
-                  <div class="recipe-item__content__footer__ing"><a href="#">Ингридиенты</a></div>
-                  <div class="recipe-item__content__footer__comments">
-                    <div class="comments-icon"></div><span class="recipe-item__footer-number" id="recipe-item-num-comments">34</span>
-                  </div>
-                  <div class="recipe-item__content__footer__rate">
-                    <div class="rate-icon"></div><span class="recipe-item__footer-number" id="recipe-item-num-like">235</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-#{n} col-md-4 col-sm-6">
-            <div class="recipe-item">
-              <div class="recipe-item__img"><img src="img/recipe-pic.jpg" alt="Cacke"></div>
-              <div class="recipe-item__content">
-                <div class="recipe-item__content__header">
-                  <h3><a href="one-recipe.html">Овощные оладьи из овощей с зеленью</a></h3>
-                </div>
-                <div class="recipe-item__content__short-text">
-                  <p>Ранним летом, когда на рынке овощей царит изобилие, хочется побаловать себя и близких облегченным в диетическом... плане кушаньем. К таковым можно отнести оладьи, приготовленные из кабачков, моркови или картофеля, а ещё и из молодой свекольной ботвы.</p>
-                </div>
-                <div class="recipe-item__content__footer clearfix">
-                  <div class="recipe-item__content__footer__ing"><a href="#">Ингридиенты</a></div>
-                  <div class="recipe-item__content__footer__comments">
-                    <div class="comments-icon"></div><span class="recipe-item__footer-number" id="recipe-item-num-comments">34</span>
-                  </div>
-                  <div class="recipe-item__content__footer__rate">
-                    <div class="rate-icon"></div><span class="recipe-item__footer-number" id="recipe-item-num-like">235</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-#{n} col-md-4 col-sm-6">
-            <div class="recipe-item">
-              <div class="recipe-item__img"><img src="img/recipe-pic.jpg" alt="Cacke"></div>
-              <div class="recipe-item__content">
-                <div class="recipe-item__content__header">
-                  <h3><a href="one-recipe.html">Овощные оладьи из овощей с зеленью</a></h3>
-                </div>
-                <div class="recipe-item__content__short-text">
-                  <p>Ранним летом, когда на рынке овощей царит изобилие, хочется побаловать себя и близких облегченным в диетическом... плане кушаньем. К таковым можно отнести оладьи, приготовленные из кабачков, моркови или картофеля, а ещё и из молодой свекольной ботвы.</p>
-                </div>
-                <div class="recipe-item__content__footer clearfix">
-                  <div class="recipe-item__content__footer__ing"><a href="#">Ингридиенты</a></div>
-                  <div class="recipe-item__content__footer__comments">
-                    <div class="comments-icon"></div><span class="recipe-item__footer-number" id="recipe-item-num-comments">34</span>
-                  </div>
-                  <div class="recipe-item__content__footer__rate">
-                    <div class="rate-icon"></div><span class="recipe-item__footer-number" id="recipe-item-num-like">235</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="col-lg-11 col-lg-offset-1">
+            <ul class="bread-crumbs__list">
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="#">Повседневное меню</a></li>
+              <li><a href="#">Выпечка</a></li>
+            </ul>
           </div>
         </div>
+      </div>
+    </section>
+    <!--Detailed recipe-->
+    <section class="main-content">
+      <div class="container">
         <div class="row">
-          <div class="col-lg-12 text-center">
-            <nav class="pagination" aria-label="Page navigation">
-              <ul class="pagination">
-                <li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo</span></a></li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo</span></a></li>
+          <div class="recipe-description col-lg-8">
+            <div class="recipe-description__date col-lg-1"><span id="post-date">28 марта</span></div>
+            <div class="recipe-description__header col-lg-10">
+              <h1>Овощные оладьи из овощей с зеленью и подсолнечным маслом</h1>
+            </div>
+            <div class="col-lg-7 col-lg-offset-1 recipe-description__img"><img src="img/post-pic.jpg" width="620px" height="450px"></div>
+          </div>
+          <div class="sidebar col-lg-4">
+            <div class="ingridients">
+              <h3 class="ingridients__header">Ингридиенты:</h3>
+              <ul class="ingridients__list">
+                <li>Молоко — 600 мл</li>
+                <li>Масло растительное — 3 ст. л.</li>
+                <li>Яйцо куриное — 2 шт.</li>
+                <li>Сахар — 3 ст. л.</li>
+                <li>Соль — 0,5 ч. л.</li>
+                <li>Мука пшеничная — 10 ст. ложек</li>
               </ul>
-            </nav>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <!--Footer-->
     <section class="footer">
       <div class="container">
         <div class="row">

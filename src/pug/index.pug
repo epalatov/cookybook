@@ -1,19 +1,11 @@
 extends templates/page
 
-block head
+append head
   title Cookybook
-  meta(http-equiv="X-UA-Compatible" content="IE=edge")
-  meta(name="viewport" content="width=device-width, initial-scale=1.0")
-  meta(http-equiv="X-UA-Compatible" content="ie=edge")
-  meta(charset="UTF-8")
-  link(rel="stylesheet" href="css/font-awesome.css")
-  link(rel="stylesheet" href="css/bootstrap.css")
-  link(rel="stylesheet" href="css/reset.css")
   link(rel="stylesheet" href="css/main.css")
 
-block content
-  include ./includes/top-menu
-  //-About-short and random recipe
+append content
+
   section.about-and-recipe
     div.container
       .row
@@ -39,7 +31,7 @@ block content
               .col-lg-4.col-md-4.col-sm-4.text-center
                 img(class="food-pic" src="img/food-right.jpg", alt="food")
 
-  //-My-recipes
+  //My-recipes
   section.my-recipes
     div.container
       //-Head of section
@@ -71,60 +63,8 @@ block content
         .col-lg-12.text-center
           include ./includes/pagination.pug
 
-  //-Footer
-  section.footer
-    .container
-      .row
-        .footer__col.col-lg-4.col-md-4
-          .col__insta-widget
-            .footer__col__header
-              span Инстаграм
-            img(src="img/insta-widget.jpg", alt="")
 
-        .footer__col.col-lg-4.col-md-4.col-sm-6
-         .col__my-tests
-            .footer__col__header
-              span Затестим
-            ul.list__items
-              li
-                i(class="fa fa-angle-right" aria-hidden="true")
-                a(href="#") Запеканка Пармантье со сладким картофелем
-              li
-                i(class="fa fa-angle-right" aria-hidden="true")
-                a(href="#") Печеночный торт с морковью и луком со сладким картофелем
-              li
-                i(class="fa fa-angle-right" aria-hidden="true")
-                a(href="#") Лазанья классическая с мясом со сладким картофелем
-              li
-                i(class="fa fa-angle-right" aria-hidden="true")
-                a(href="#") Печеночный торт с морковью и луком со сладким картофелем
-
-        .footer__col.col-lg-4.col-md-4.col-sm-6
-          .col__last-comments
-            .footer__col__header
-              span Последние комментарии
-            ul.list__items
-              li
-                i(class="fa fa-angle-right" aria-hidden="true")
-                a(href="#") Запеканка Пармантье со сладким картофелем
-              li
-                i(class="fa fa-angle-right" aria-hidden="true")
-                a(href="#") Печеночный торт с морковью и луком со сладким картофелем
-              li
-                i(class="fa fa-angle-right" aria-hidden="true")
-                a(href="#") Лазанья классическая с мясом со сладким картофелем
-              li
-                i(class="fa fa-angle-right" aria-hidden="true")
-                a(href="#") Печеночный торт с морковью и луком со сладким картофелем
-
-  //-Footer bottom
-  section.footer-bootom-part
-    .container
-        .row
-          .bottom-part__copy.col-lg-6.col-md-6.col-sm-6.col-xs-6
-            span.copy cookybook, 2017
-          .bottom-part__social-btn.text-right.col-lg-6.col-md-6.col-sm-6.col-xs-6
-            i(class="fa fa-instagram" aria-hidden="true")
+append footer
 
   script(src="js/libs.min.js")
   script(src="js/main.js")

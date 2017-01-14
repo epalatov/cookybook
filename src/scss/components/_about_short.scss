@@ -1,6 +1,7 @@
 /* About Short */
 
 .about-short {
+  padding-top: 55px;
   &__divider {
     margin-top: 40px;
     @include line-double($medium-grey)

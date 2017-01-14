@@ -2,13 +2,14 @@
 .main-head {
   height: 80px;
   width: 100%;
-  margin-bottom: 55px;
+  //margin-bottom: 55px;
   background-color: $main-grey;
   @media (max-width: 767px) { // small <-Small-> Medium
     //background-color: $accent-green;
     height: 55px;
   }
 }
+
 .sub-menu-btn {
   float: left;
   font-size: 28px;
