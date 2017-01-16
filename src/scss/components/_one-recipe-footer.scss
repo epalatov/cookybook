@@ -1,0 +1,48 @@
+.one-recipe-footer {
+  padding: 20px 30px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  background-color: $light-grey;
+  color: $main-black;
+  &__tags {
+    float: left;
+    &__list:before {
+      font-family: "FontAwesome";
+      font-size: 14px;
+      content: "\f02b";
+      color: $dark-grey;
+      margin-right: 10px;
+    }
+
+    &__list li{
+      display: inline-block;
+      margin-right: 10px;
+    }
+    a {
+      color: $dark-green;
+      font-size: 16px;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  &__comments {
+    width: 70px;
+    float: right;
+    text-align: right;
+    i {
+      color: $dark-grey;
+      margin-right: 10px;
+    }
+  }
+  &__rate {
+    text-align: right;
+    width: 70px;
+    float: right;
+    i {
+      color: #e64545;
+      margin-right: 10px;
+    }
+  }
+}

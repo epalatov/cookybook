@@ -1,7 +1,11 @@
 /* Random Recipe */
 
 .random-recipe {
-  padding-top: 55px;
+    padding-top: 55px;
+    @media (max-width: 1199px) {
+    padding-top: 0;
+  }
+
   &__btn-area {
     top: 100%;
     height: 135px;

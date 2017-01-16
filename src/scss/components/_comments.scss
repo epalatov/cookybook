@@ -1,0 +1,51 @@
+.comments-section {
+  margin-bottom: 100px;
+}
+
+.comments-section h2 {
+  @include proxima-b (28px, $main-black);
+  margin-bottom: 50px;
+}
+
+.single-comment {
+  background-color: $light-grey;
+  margin-bottom: 30px;
+  position: relative;
+  padding: 25px 0;
+  &__like-icon {
+    position: absolute;
+    top: -18px;
+    left: -18px;
+    background-color: #e64545;
+    color: #fff;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+  }
+  &__unlike-icon {
+    position: absolute;
+    top: -18px;
+    left: -18px;
+    background-color: $dark-grey;
+    color: #fff;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+  }
+  &__avatar {
+    margin-left: 10px;
+  }
+  &__content {
+    font-size: 16px;
+    .single-comment-date {
+      padding-bottom: 10px;
+    }
+    .single-comment-text {
+      color: $main-black
+    }
+  }
+}

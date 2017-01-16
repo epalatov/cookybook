@@ -1,0 +1,45 @@
+.sidebar {
+  &__ingridients {
+    background: $beige;
+    padding: 25px 35px;
+    margin-bottom: 30px;
+    color: lighten($main-black, 10%);
+    font-size: 16px;
+    .ingridients__header {
+      @include proxima-b(20px, lighten($main-black, 5%));
+      margin-bottom: 10px;
+    }
+    .ingridients__list {
+      line-height: 1.7;
+    }
+  }
+  &__widget {
+    background: $light-grey;
+    padding: 25px 35px;
+    margin-bottom: 30px;
+    //border: 3px solid darken($light-grey, 5%);
+
+    &__header {
+      @include proxima-b(20px, lighten($main-black, 5%));
+      margin-bottom: 10px;
+    }
+    &__list li {
+      margin-bottom: 10px;
+      line-height: 1.3;
+      a {
+        @include link($color: $light-brown)
+        font-size: 16px;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.sidebar.col-lg-4 {
+  //padding-right: 0;
+}
+
+.sidebar__top-decor {
+  background: url(../img/ingr-top.png) repeat-x 0 0;
+  height: 6px;
+}

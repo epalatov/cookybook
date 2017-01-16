@@ -1,0 +1,13 @@
+.share-btn-section {
+  border: 3px solid $light-grey;
+  height: 110px;
+  margin-bottom: 60px;
+  p {
+    color: $main-black;
+    margin-top: 15px;
+    margin-bottom: 7px;
+  }
+  .share-btn-wrapper img {
+    margin-right: 10px;
+  }
+}

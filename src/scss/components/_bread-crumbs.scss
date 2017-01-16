@@ -7,7 +7,7 @@
     padding-left: 0;
   }
   &__list {
-    background-color: lighten($main-grey, 3%);
+    background-color: $light-grey;
     padding: 5px 20px 8px 20px;
     border-radius: 3px;
   }
