@@ -65,7 +65,7 @@
       margin-left: 0;
     }
   }
-    a:link {
+    a:link, a:visited {
       color: $main-black;
       text-decoration: none;
     }
@@ -108,4 +108,8 @@
       margin-right: 10px;
     }
   }
+}
+
+a.active {
+  color: $bright-brown;
 }

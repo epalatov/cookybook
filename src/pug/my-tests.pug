@@ -1,0 +1,54 @@
+extends templates/page
+
+append head
+  title Cookybook
+  link(rel="stylesheet" href="css/main.css")
+
+append content
+  //Bread-crumbs
+  section.bread-crumbs
+    .container
+      .row.gutter-0
+        .col-lg-12.col-sm-12.col-xs-12
+          ul.bread-crumbs__list
+            li: a(href="index.html") Главная
+            li: a(href="#") Затестим
+
+  //My-recipes
+  section.my-recipes.my-tests
+    div.container
+      //-Head of section
+      .row
+        .col-lg-12
+          h1.my-recipes__header Затестим
+      //-Recipes
+      .row
+        div(class="col-lg-#{n} col-md-4 col-sm-6")
+          include ./includes/recipe-preview.pug
+        div(class="col-lg-#{n} col-md-4 col-sm-6")
+          include ./includes/recipe-preview.pug
+        div(class="col-lg-#{n} col-md-4 col-sm-6")
+          include ./includes/recipe-preview.pug
+        div(class="col-lg-#{n} col-md-4 col-sm-6")
+          include ./includes/recipe-preview.pug
+        div(class="col-lg-#{n} col-md-4 col-sm-6")
+          include ./includes/recipe-preview.pug
+        div(class="col-lg-#{n} col-md-4 col-sm-6")
+          include ./includes/recipe-preview.pug
+        div(class="col-lg-#{n} col-md-4 col-sm-6")
+          include ./includes/recipe-preview.pug
+        div(class="col-lg-#{n} col-md-4 col-sm-6")
+          include ./includes/recipe-preview.pug
+        div(class="col-lg-#{n} col-md-4 col-sm-6")
+          include ./includes/recipe-preview.pug
+      //-Pagination
+      .row
+        .col-lg-12.text-center
+          include ./includes/pagination.pug
+
+
+append footer
+
+  script(src="js/jquery.min.js")
+  script(src="js/tooltip.js")
+  script(src="js/main.js")

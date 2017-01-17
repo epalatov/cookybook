@@ -1,0 +1,38 @@
+extends templates/page
+
+append head
+  title Cookybook
+  link(rel="stylesheet" href="css/main.css")
+
+append content
+  //Bread-crumbs
+  section.bread-crumbs
+    .container
+      .row.gutter-0
+        .col-lg-12.col-sm-12.col-xs-12
+          ul.bread-crumbs__list
+            li: a(href="index.html") Главная
+            li: a(href="#") Обо мне
+
+  //My-recipes
+  section.about-me
+    .container
+      //-Head of section
+      .row
+        .col-lg-12
+          h1.about-me__header Обо мне
+      //-Content
+      .row
+        .col-lg-4
+          img(src="img/about.jpg" height="408px").about-me__img
+        .col-lg-6.text-left
+          p.about-me__txt Ранним летом, когда на рынке овощей царит изобилие, хочется побаловать себя и близких облегченным в диетическом... плане кушаньем. К таковым можно отнести оладьи, приготовленные из кабачков, моркови или картофеля, а ещё и из молодой свекольной ботвы.
+          p.about-me__txt Ранним летом, когда на рынке овощей царит изобилие, хочется побаловать себя и близких облегченным в диетическом... плане кушаньем. К таковым можно отнести оладьи, приготовленные из кабачков, моркови или картофеля, а ещё и из молодой свекольной ботвы.
+          p.about-me__txt Ранним летом, когда на рынке овощей царит изобилие, хочется побаловать себя и близких облегченным в диетическом... плане кушаньем. К таковым можно отнести оладьи, приготовленные из кабачков, моркови или картофеля, а ещё и из молодой свекольной ботвы.
+
+
+append footer
+
+  script(src="js/jquery.min.js")
+  script(src="js/tooltip.js")
+  script(src="js/main.js")

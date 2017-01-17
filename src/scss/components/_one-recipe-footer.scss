@@ -46,3 +46,21 @@
     }
   }
 }
+
+.conclusion {
+  background-color: $accent-green;
+  padding: 20px 30px;
+  color: $main-black;
+  &__header {
+    float: left;
+    @include proxima-b(18px, $main-black);
+    margin-right: 10px;
+  }
+  &__text {
+
+  }
+}
+
+.my-tests .one-recipe-footer {
+  margin-top: 0;
+}

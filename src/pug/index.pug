@@ -8,17 +8,16 @@ append content
 
   section.about-and-recipe
     div.container
-      .row
-        .col-lg-8.about-short
+      .row.gutter-0
+        .col-lg-7.about-short
           .row.gutter-0
             .col-lg-3.col-md-3.col-sm-3.col-xs-12.text-center.about-short__avatar
               img(src="img/ava.png", alt="It's me")
             .col-lg-8.col-lg-offset-1.col-md-7.col-md-offset-1.col-sm-8.col-sm-offset-1.col-xs-12.about-short__text
-              p Привет!<br>Ранним летом, когда на рынке овощей царит изобилие, хочется побаловать себя и близких облегченным в диетическом... плане кушаньем. К таковым можно отнести оладьи, приготовленные из кабачков, моркови или картофеля, а ещё и из молодой... #[a(href="#") Читать далее]
-            hr.col-md-12.col-lg-12.col-xs-12.about-short__divider
+              p Привет!<br><br>Ранним летом, когда на рынке овощей царит изобилие, хочется побаловать себя и близких облегченным в диетическом... плане кушаньем. К таковым можно отнести оладьи, приготовленные из кабачков, моркови или картофеля, а ещё и из молодой... #[a(href="#") Читать далее]
 
 
-        .col-lg-4.random-recipe
+        .col-lg-4.col-lg-offset-1.random-recipe
           .row.gutter-0
             .col-md-12.random-recipe__heading
               p Мы придумаем что приготовить сегодня вместе.
@@ -27,10 +26,10 @@ append content
               .col-lg-4.col-md-4.col-sm-4.text-center
                 img(class="food-pic" src="img/food-left.jpg", alt="food")
               .col-lg-12.col-md-4.col-sm-4.text-center
-                button.random-recipe__btn Предложить рецепт
+                a(href="one-recipe.html"): button.random-recipe__btn Предложить рецепт
               .col-lg-4.col-md-4.col-sm-4.text-center
                 img(class="food-pic" src="img/food-right.jpg", alt="food")
-
+        hr.col-md-12.col-lg-12.col-xs-12.about-short__divider
   //My-recipes
   section.my-recipes
     div.container
@@ -69,3 +68,4 @@ append footer
   script(src="js/jquery.min.js")
   script(src="js/tooltip.js")
   script(src="js/main.js")
+  script(src="js/jquery.magnific-popup.min.js")

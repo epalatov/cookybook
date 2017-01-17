@@ -15,7 +15,7 @@
   &__text {
     @include proxima-r(18px, $main-black);
     line-height: 1.7;
-    height: 174px;
+    height: 210px;
     overflow: hidden;
     @media (max-width: 767px) {
       text-align: center;

@@ -1,0 +1,14 @@
+.about-me {
+  margin-bottom: 100px;
+  &__header {
+    @include proxima-b(30px, $main-black)
+    margin-bottom: 35px;
+  }
+  &__txt {
+    margin-bottom: 20px;
+    color: $main-black;
+  }
+  &__img img {
+    height: 408px;
+  }
+}

@@ -9,6 +9,7 @@ html(lang="en")
       link(rel="stylesheet" href="css/font-awesome.css")
       link(rel="stylesheet" href="css/bootstrap.css")
       link(rel="stylesheet" href="css/reset.css")
+      link(rel="stylesheet" href="css/magnific-popup.css")
   body
     block content
       //-Header
@@ -24,13 +25,14 @@ html(lang="en")
               a(href="index.html"): img(src='img/logo.png')
             //-Menu
             nav.col-md-6.col-sm-4.top-menu
-              li.top-menu__item: a(href="my-tests.html") Затестим
-              li.top-menu__item: a(href="my-tests.html") Обо мне
+              li.top-menu__item: a(href="my-tests.html" class="active") Затестим
+              li.top-menu__item: a(href="about-me.html") Обо мне
             //-Search
             div.col-md-3.col-xs-4.col-sm-3.main-search
               div.main-search__wrapper
                 i.fa.fa-search.main-search__icon(aria-hidden="true")
-                button.main-search__btn Поиск
+                a(href="#test-form" class="popup-with-form") Search
+                  //-button.main-search__btn Поиск
       //-Dropdown Menu
       section#drop-down-top-menu.drop-down-top-menu.hidden
         .container
@@ -111,3 +113,9 @@ html(lang="en")
                 span.copy cookybook, 2017
               .bottom-part__social-btn.text-right.col-lg-6.col-md-6.col-sm-6.col-xs-6
                 i(class="fa fa-instagram" aria-hidden="true")
+
+      //-Popup
+      form#test-form.mfp-hide.white-popup-block
+        span.search-form
+          input#name(name='name', type='text', placeholder='Name', required='' class="search-form__field")
+          input#search(type='submit' class="searsh-form__btn" value='')
