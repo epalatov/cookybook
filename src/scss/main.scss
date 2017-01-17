@@ -65,3 +65,14 @@ h3 {
 // div {
 //   outline: 1px solid orange;
 // }
+
+// stickyBlock
+
+.sticky {
+  position: fixed;
+  z-index: 101;
+}
+.stop {
+  position: relative;
+  z-index: 101;
+}

@@ -451,8 +451,12 @@
 .bread-crumbs {
   padding-top: 44px;
   padding-bottom: 60px; }
-  .bread-crumbs .col-lg-12, .bread-crumbs .col-lg-11 {
-    padding-left: 0; }
+  @media (min-width: 1200px) {
+    .bread-crumbs .col-lg-12, .bread-crumbs .col-lg-11 {
+      padding-left: 0; } }
+  @media (max-width: 991px) {
+    .bread-crumbs {
+      padding-bottom: 30px; } }
   .bread-crumbs__list {
     background-color: #f9f9f9;
     padding: 5px 20px 8px 20px;
@@ -479,8 +483,9 @@
   padding-right: 0;
   padding-left: 0; }
 
-.one-recipe-content .col-lg-1 {
-  width: 100px; }
+@media (min-width: 1200px) {
+  .one-recipe-content .col-lg-1 {
+    width: 100px; } }
 
 .recipe-description.col-lg-8 {
   padding-left: 0; }
@@ -496,21 +501,36 @@
   color: #2d2d2d;
   margin-bottom: 42px; }
 
-.recipe-description__date.col-lg-1, .recipe-description__step.col-lg-1 {
-  padding-right: 20px;
-  padding-left: 0;
-  font-size: 16px;
-  border-right: 1px solid #c4c4c4;
-  text-align: right; }
+.recipe-description__img img {
+  width: 100%;
+  height: auto; }
+
+@media (max-width: 991px) {
+  .recipe-description__step {
+    padding-bottom: 10px; } }
 
 .recipe-description__step-description {
   color: #2d2d2d;
   margin-bottom: 30px; }
 
+@media (max-width: 991px) {
+  .recipe-description__date {
+    padding-bottom: 10px; } }
+
+@media (min-width: 1200px) {
+  .recipe-description__date.col-lg-1, .recipe-description__step.col-lg-1 {
+    padding-right: 20px;
+    padding-left: 0;
+    font-size: 16px;
+    border-right: 1px solid #c4c4c4;
+    text-align: right; } }
+
+.ingridients-wrapper {
+  margin-bottom: 30px; }
+
 .sidebar__ingridients {
-  background: #ecdfcc;
+  background: #f3ebdf;
   padding: 25px 35px;
-  margin-bottom: 30px;
   color: #474747;
   font-size: 16px; }
   .sidebar__ingridients .ingridients__header {
@@ -520,6 +540,12 @@
     margin-bottom: 10px; }
   .sidebar__ingridients .ingridients__list {
     line-height: 1.7; }
+  @media (max-width: 991px) {
+    .sidebar__ingridients {
+      font-size: 14px; } }
+  @media (max-width: 767px) {
+    .sidebar__ingridients {
+      font-size: 16px; } }
 
 .sidebar__widget {
   background: #f9f9f9;
@@ -666,3 +692,11 @@ h3 {
 
 .db {
   outline: 1px solid red; }
+
+.sticky {
+  position: fixed;
+  z-index: 101; }
+
+.stop {
+  position: relative;
+  z-index: 101; }

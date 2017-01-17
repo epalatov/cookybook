@@ -16,7 +16,7 @@ block append content
   section.bread-crumbs
     .container
       .row
-        .col-lg-11.col-lg-offset-1
+        .col-lg-11.col-lg-offset-1.col-sm-12.col-xs-12
           ul.bread-crumbs__list
             li: a(href="index.html") Главная
             li: a(href="#") Повседневное меню
@@ -26,37 +26,37 @@ block append content
     .container
       .row.gutter-0
         //Detailed recipe
-        .recipe-description.col-lg-8
-          .recipe-description__date.col-lg-1
+        .recipe-description.col-lg-8.col-sm-7
+          .recipe-description__date.col-lg-1.col-sm-12.col-xs-12
             span#post-date 16 января
-          .recipe-description__header.col-lg-10
+          .recipe-description__header.col-lg-10.col-sm-12.col-xs-12
             h1 Овощные оладьи из овощей с зеленью и подсолнечным маслом
           .col-lg-1
-          .recipe-description__img.col-lg-10
-            img(src="img/post-pic.jpg" width="620px" height="450px")
+          .recipe-description__img.col-lg-10.col-sm-12.col-xs-12
+            img(src="img/post-pic.jpg")
           .col-lg-1
-          .recipe-description__text.col-lg-10
+          .recipe-description__text.col-lg-10.col-sm-12.col-xs-12
             p Ранним летом, когда на рынке овощей царит изобилие, хочется
               |побаловать себя и близких облегченным в диетическом... плане
               |кушаньем. К таковым можно отнести оладьи, приготовленные из
               |кабачков, моркови или картофеля, а ещё и из молодой свекольной ботвы.
-          .recipe-description__step.col-lg-1
+          .recipe-description__step.col-lg-1.col-sm-12.col-xs-12
             span#recipe-step Шаг 1
-          .recipe-description__step-description.col-lg-10
+          .recipe-description__step-description.col-lg-10.col-sm-12.col-xs-12
             p Берем промытую 1,5-литровую бутылку от минералки
               |(или любого напитка)
-          .recipe-description__step.col-lg-1
+          .recipe-description__step.col-lg-1.col-sm-12.col-xs-12
             span#recipe-step Шаг 2
-          .recipe-description__step-description.col-lg-10
+          .recipe-description__step-description.col-lg-10.col-sm-12.col-xs-12
             p Разводим сметану водой (чтобы было жидко)
-          .recipe-description__step.col-lg-1
+          .recipe-description__step.col-lg-1.col-sm-12.col-xs-12
             span#recipe-step Шаг 3
-          .recipe-description__step-description.col-lg-10
+          .recipe-description__step-description.col-lg-10.col-sm-12.col-xs-12
             p Все это кипятим на маленьком огоньке 5 -10 минут. Лучше под крышкой.
 
         //Sidebar
-        .sidebar.col-lg-4
-          .ingridients-wrapper
+        .sidebar.col-lg-4.col-sm-5.col-xs-12
+          #ingridients.ingridients-wrapper
             .sidebar__top-decor
             .sidebar__ingridients
               h3.ingridients__header Ингридиенты:
@@ -67,13 +67,13 @@ block append content
                 li Сахар — 3 ст. л.
                 li Соль — 0,5 ч. л.
                 li Мука пшеничная — 10 ст. ложек
-          .sidebar__widget
+          .sidebar__widget.col-xs-12
             h3.sidebar__widget__header Возможно вам понравится
             ul.sidebar__widget__list
               li: a(href="#") Запеканка Пармантье со сладким картофелем
               li: a(href="#") Ажурные блины
               li: a(href="#") Львовский сырник
-          .sidebar__widget
+          .sidebar__widget.col-xs-12
             h3.sidebar__widget__header Возможно вам понравится
             ul.sidebar__widget__list
               li: a(href="#") Запеканка Пармантье со сладким картофелем
