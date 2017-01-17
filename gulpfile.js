@@ -32,12 +32,13 @@ gulp.task('pug', function(){ // Создаем таск "pug"
 
 gulp.task('vendor-scripts', function() {
     return gulp.src([ // Берем все необходимые библиотеки
+        'libs/bootstrap/js/tooltip.js',
         'libs/jquery/dist/jquery.min.js', // Берем jQuery
         'libs/magnific-popup/dist/jquery.magnific-popup.min.js' // Берем Magnific Popup
         ])
-        .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
-        .pipe(uglify()) // Сжимаем JS файл
-        .pipe(gulp.dest('js/')); // Выгружаем в папку app/js
+        // .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
+        // .pipe(uglify()) // Сжимаем JS файл
+        .pipe(gulp.dest('js/')); // Выгружаем в /js
 });
 
 gulp.task('scripts', function() {

@@ -5,6 +5,10 @@ function toggle(){
 }
 document.querySelector('#menu-btn').addEventListener("click", toggle)
 
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+})
+
 function stickIngr(){
 var a = document.querySelector('#ingridients'), b = null, P = 20;
 window.addEventListener('scroll', Ascroll, false);

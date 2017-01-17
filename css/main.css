@@ -335,6 +335,19 @@
           width: 24px;
           height: 17px; }
 
+.tooltip-inner {
+  padding: 15px 25px 20px 25px;
+  text-align: left;
+  max-width: 400px;
+  background-color: #9c3b3b;
+  color: #fff;
+  font-size: 14px; }
+  .tooltip-inner ul li {
+    list-style-type: disc; }
+
+.top.tooltip .tooltip-arrow {
+  border-top-color: #9c3b3b; }
+
 .footer {
   padding-top: 84px;
   background-color: #f2f1f1;
@@ -540,9 +553,6 @@
     margin-bottom: 10px; }
   .sidebar__ingridients .ingridients__list {
     line-height: 1.7; }
-  @media (max-width: 991px) {
-    .sidebar__ingridients {
-      font-size: 14px; } }
   @media (max-width: 767px) {
     .sidebar__ingridients {
       font-size: 16px; } }

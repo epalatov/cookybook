@@ -14,7 +14,12 @@
     .recipe-item__content__footer.clearfix
       //-Link of ingridients
       .recipe-item__content__footer__ing
-        a(href="#") Ингридиенты
+        a(href="#" data-toggle="tooltip" data-trigger="hover" title="<ul><li>Молоко: 600 мл</li><li>Масло растительное: 3 ст. л.</li><li>Яйцо куриное: 2 шт.</li><li>Сахар: 3 ст. л.</li><li>Соль: 0,5 ч. л.</li><li>Мука пшеничная: 10 ст. ложек</li></ul>" data-placement="top" data-html="true") Ингридиенты
+        div(role="tooltip").tooltip.top
+          .tooltip-arrow
+          .tooltip-inner
+
+
       //-icon of comments
       .recipe-item__content__footer__comments
         .comments-icon

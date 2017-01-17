@@ -4,3 +4,7 @@ function toggle(){
   dropDownMenu.classList.toggle('visible');
 }
 document.querySelector('#menu-btn').addEventListener("click", toggle)
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+})
