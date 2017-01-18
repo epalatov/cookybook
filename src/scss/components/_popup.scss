@@ -18,9 +18,12 @@
 .search-form__field {
   width: 100%;
   height: 67px;
-  padding-left: 30px;
+  padding-left: 20px;
   font-size: 30px;
+  color: $main-black;
   float: left;
+  outline: none;
+  margin-bottom: 30px;
 }
 
 .searsh-form__btn {
@@ -35,5 +38,15 @@
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
-
+}
+button.mfp-close {
+  display: none;
+}
+.search-by-ingridients {
+  @include proxima-b(20px, darken($dark-grey, 10%));
+  border-bottom: 1px dashed $dark-grey;
+  cursor: pointer;
+  &:hover {
+    border: none;
+  }
 }

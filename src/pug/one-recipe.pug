@@ -1,17 +1,10 @@
 extends templates/page
 
-block head
-  title Cookybook | Оладьи из овощей
-  meta(http-equiv="X-UA-Compatible" content="IE=edge")
-  meta(name="viewport" content="width=device-width, initial-scale=1.0")
-  meta(http-equiv="X-UA-Compatible" content="ie=edge")
-  meta(charset="UTF-8")
-  link(rel="stylesheet" href="css/font-awesome.css")
-  link(rel="stylesheet" href="css/bootstrap.css")
-  link(rel="stylesheet" href="css/reset.css")
+append head
+  title Cookybook
   link(rel="stylesheet" href="css/main.css")
 
-block append content
+append content
   //Bread crumbs
   section.bread-crumbs
     .container
@@ -143,6 +136,7 @@ block append content
 
 
 append footer
-
-  script(src="src/js/sticky.js")
+  script(src="js/jquery.min.js")
+  script(src="js/tooltip.js")
+  script(src="js/jquery.magnific-popup.min.js")
   script(src="js/main.js")

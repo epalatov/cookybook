@@ -31,7 +31,7 @@ html(lang="en")
             div.col-md-3.col-xs-4.col-sm-3.main-search
               div.main-search__wrapper
                 i.fa.fa-search.main-search__icon(aria-hidden="true")
-                a(href="#test-form" class="popup-with-form") Search
+                a(href="#search-form" class="popup-with-form main-search__btn") Поиск
                   //-button.main-search__btn Поиск
       //-Dropdown Menu
       section#drop-down-top-menu.drop-down-top-menu.hidden
@@ -115,7 +115,8 @@ html(lang="en")
                 i(class="fa fa-instagram" aria-hidden="true")
 
       //-Popup
-      form#test-form.mfp-hide.white-popup-block
+      form#search-form.mfp-hide.white-popup-block
         span.search-form
-          input#name(name='name', type='text', placeholder='Name', required='' class="search-form__field")
-          input#search(type='submit' class="searsh-form__btn" value='')
+          input#search-field(name='name', type='text', placeholder='Что ищем?...', required='' class="search-form__field")
+          input#search-btn(type='submit' class="searsh-form__btn" value='')
+        span.search-by-ingridients Поиск по ингридиетам

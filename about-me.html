@@ -25,7 +25,7 @@
             <li class="top-menu__item"><a href="about-me.html">Обо мне</a></li>
           </nav>
           <div class="col-md-3 col-xs-4 col-sm-3 main-search">
-            <div class="main-search__wrapper"><i class="fa fa-search main-search__icon" aria-hidden="true"></i><a class="popup-with-form" href="#test-form">Search</a></div>
+            <div class="main-search__wrapper"><i class="fa fa-search main-search__icon" aria-hidden="true"></i><a class="popup-with-form main-search__btn" href="#search-form">Поиск</a></div>
           </div>
         </div>
       </div>
@@ -316,11 +316,12 @@
         </div>
       </div>
     </section>
-    <form class="mfp-hide white-popup-block" id="test-form"><span class="search-form">
-        <input class="search-form__field" id="name" name="name" type="text" placeholder="Name" required="">
-        <input class="searsh-form__btn" id="search" type="submit" value=""></span></form>
+    <form class="mfp-hide white-popup-block" id="search-form"><span class="search-form">
+        <input class="search-form__field" id="search-field" name="name" type="text" placeholder="Что ищем?..." required="">
+        <input class="searsh-form__btn" id="search-btn" type="submit" value=""></span><span class="search-by-ingridients">Поиск по ингридиетам</span></form>
     <script src="js/jquery.min.js"></script>
     <script src="js/tooltip.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -84,18 +84,21 @@
       width: 45px;
     }
   }
-    button.main-search__btn {
-    font-family: 'ProximaNova-Bold', Helvetica, sans-serif;
-    color: $main-black;
-    border: none;
-    outline:none;
-    background: none;
-    font-size: 18px;
-    @media (max-width: 370px) {
+    a.main-search__btn {
+      font-family: 'ProximaNova-Bold', Helvetica, sans-serif;
+      color: $main-black;
+      border: none;
+      outline:none;
+      margin-left: 10px;
+      background: none;
+      font-size: 18px;
+      text-decoration: none;
+      @media (max-width: 370px) {
       display: none;
     }
     &:hover {
       color: $bright-brown;
+      text-decoration: none;
     }
   }
     .main-search__icon {

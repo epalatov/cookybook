@@ -86,18 +86,21 @@
     @media (max-width: 370px) {
       .main-search__wrapper {
         width: 45px; } }
-  .main-search button.main-search__btn {
+  .main-search a.main-search__btn {
     font-family: 'ProximaNova-Bold', Helvetica, sans-serif;
     color: #2d2d2d;
     border: none;
     outline: none;
+    margin-left: 10px;
     background: none;
-    font-size: 18px; }
+    font-size: 18px;
+    text-decoration: none; }
     @media (max-width: 370px) {
-      .main-search button.main-search__btn {
+      .main-search a.main-search__btn {
         display: none; } }
-    .main-search button.main-search__btn:hover {
-      color: #9c3b3b; }
+    .main-search a.main-search__btn:hover {
+      color: #9c3b3b;
+      text-decoration: none; }
   .main-search .main-search__icon {
     font-size: 20px;
     color: #919191; }
@@ -731,9 +734,12 @@ a.active {
 .search-form__field {
   width: 100%;
   height: 67px;
-  padding-left: 30px;
+  padding-left: 20px;
   font-size: 30px;
-  float: left; }
+  color: #2d2d2d;
+  float: left;
+  outline: none;
+  margin-bottom: 30px; }
 
 .searsh-form__btn {
   position: absolute;
@@ -747,6 +753,18 @@ a.active {
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer; }
+
+button.mfp-close {
+  display: none; }
+
+.search-by-ingridients {
+  font-family: 'ProximaNova-Bold', Helvetica, sans-serif;
+  font-size: 20px;
+  color: #787878;
+  border-bottom: 1px dashed #919191;
+  cursor: pointer; }
+  .search-by-ingridients:hover {
+    border: none; }
 
 body {
   min-width: 320px;
