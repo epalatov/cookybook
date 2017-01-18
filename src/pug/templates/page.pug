@@ -118,5 +118,15 @@ html(lang="en")
       form#search-form.mfp-hide.white-popup-block
         span.search-form
           input#search-field(name='name', type='text', placeholder='Что ищем?...', required='' class="search-form__field")
-          input#search-btn(type='submit' class="searsh-form__btn" value='')
-        span.search-by-ingridients Поиск по ингридиетам
+          input#main-search-btn(type='submit' class="searsh-form__btn" value='')
+        .ingridients-tags-search
+          ul#tags-search-list.ingridients-tags-search__list
+            li: a(href="#" id="ingridient-search") Курица
+            li: a(href="#" id="ingridient-search") Молоко
+            li: a(href="#" id="ingridient-search") Картофель
+            li: a(href="#" id="ingridient-search") Сыр
+            li: a(href="#" id="ingridient-search") Яйца
+            li: a(href="#" id="ingridient-search") Помидоры
+            li: a(href="#" id="ingridient-search") Какао
+
+        span#ingr-search-btn.search-by-ingridients-btn Поиск по ингридиетам
