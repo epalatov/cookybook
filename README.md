@@ -1,4 +1,4 @@
-## Сookybook
+## Сookybook — Рецепты на каждый день
 
 <strong>Клиент:</strong> Частное лицо<br>
 <strong>Год:</strong> 2017<br>
