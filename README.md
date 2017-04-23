@@ -22,7 +22,7 @@
 По цветовому решению требование чтобы сайт был максимально легким и воздушным, но при этом сочным и ярким.
 
 <strong>Дополнительные материалы:</strong> <a href="https://www.dropbox.com/s/qdl0kelv96d2ez6/cookybook.psd?dl=0" target="_blank" rel="noopener noreferrer">Макеты</a>
-<div><strong>Ссылка:</strong><a href="http://cookybook.ru/" target="_blank" rel="noopener noreferrer">cookybook.ru
+<div><strong>Ссылка:</strong> <a href="http://cookybook.ru/" target="_blank" rel="noopener noreferrer">cookybook.ru
 </a></div><br>
 <img src="http://ifrontender.ru/wp-content/uploads/2017/04/cookybook.jpg" alt="Cookybook" />
 
